@@ -3,7 +3,7 @@
     <h2>F2L手順</h2>
     <b-list-group horizontal v-for="(item, index) in f2l" :key="item">
       <b-list-group-item>{{ index }}</b-list-group-item>
-      <b-list-group-item><div :id="'f2l_' + index"></div></b-list-group-item>
+      <b-list-group-item><div :id="'f2l' + index"></div></b-list-group-item>
       <b-list-group-item class="flex-fill">{{ item[0] }}<br/>{{ item[1] }}</b-list-group-item>
     </b-list-group>
   </div>
@@ -71,14 +71,8 @@ export default {
       paramter[key].width = this.width
       paramter[key].height = this.height
       paramter[key].case = this.f2l[key][0]
-      SRVisualizer.cubePNG(document.getElementById('f2l_' + key), paramter[key])
+      SRVisualizer.cubePNG(document.getElementById('f2l' + key), paramter[key])
     }
   },
 }
 </script>
-
-<style scoped>
-  .list-group-item {
-    padding: 0rem 1rem;
-  }
-</style>
