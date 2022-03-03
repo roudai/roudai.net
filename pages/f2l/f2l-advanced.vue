@@ -2,16 +2,20 @@
   <div>
     <h2>発展系F2L</h2>
     <h3>両手手順</h3>
-    <b-list-group horizontal v-for="(item, index) in advancedF2lth" :key="item">
+    <b-list-group horizontal v-for="(item, index) in advancedF2lth" :key="index">
       <b-list-group-item>{{ index }}</b-list-group-item>
       <b-list-group-item><div :id="'advancedF2lth' + index"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill">{{ item[0] }}</b-list-group-item>
+      <b-list-group-item class="flex-fill">
+        <div>{{ item[0] }}</div>
+      </b-list-group-item>
     </b-list-group>
     <h3>片手手順</h3>
-    <b-list-group horizontal v-for="(item, index) in advancedF2loh" :key="item">
+    <b-list-group horizontal v-for="(item, index) in advancedF2loh" :key="index">
       <b-list-group-item>{{ index }}</b-list-group-item>
       <b-list-group-item><div :id="'advancedF2loh' + index"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill">{{ item[0] }}</b-list-group-item>
+      <b-list-group-item class="flex-fill">
+        <div>{{ item[0] }}</div>
+      </b-list-group-item>
     </b-list-group>
   </div>
 </template>
@@ -33,7 +37,7 @@ export default {
       case05: ["U2 L2 U2 L U L' U L2"],
     },
     advancedF2loh: {
-      case01: ["R U' R U2 R2 U' R2 U' R2"],
+      case06: ["R U' R U2 R2 U' R2 U' R2"],
     }
   }),
   mounted() {

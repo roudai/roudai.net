@@ -2,7 +2,7 @@
   <div>
     <b-container>
       <nav-bar />
-      <b-container class="mt-2">
+      <b-container class="entry-container">
         <nuxt />
       </b-container>
     </b-container>
@@ -10,6 +10,9 @@
 </template>
 
 <style>
+  .entry-container {
+      padding: 35px;
+  }
   .list-group-item {
     padding: 0rem 1rem;
   }

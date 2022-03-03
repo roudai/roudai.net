@@ -1,10 +1,13 @@
 <template>
   <div>
     <h2>F2L手順</h2>
-    <b-list-group horizontal v-for="(item, index) in f2l" :key="item">
+    <b-list-group horizontal v-for="(item, index) in f2l" :key="index">
       <b-list-group-item>{{ index }}</b-list-group-item>
       <b-list-group-item><div :id="'f2l' + index"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill">{{ item[0] }}<br/>{{ item[1] }}</b-list-group-item>
+      <b-list-group-item class="flex-fill">
+        <div>{{ item[0] }}</div>
+        <div>{{ item[1] }}</div>
+      </b-list-group-item>
     </b-list-group>
   </div>
 </template>
