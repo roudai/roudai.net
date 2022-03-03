@@ -42,5 +42,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    babel: {
+      babelrc: false,
+      compact: false
+    },
+    extend (config) {
+      config.performance.maxAssetSize = 700 * 1024
+    }
+  },
 }
