@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'roudainet',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
@@ -49,5 +49,9 @@ export default {
     extend (config) {
       config.performance.maxAssetSize = 700 * 1024
     }
+  },
+
+  router: {
+    base: '/roudai.net/'
   },
 }
