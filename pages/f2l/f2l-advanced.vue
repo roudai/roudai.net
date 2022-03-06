@@ -30,17 +30,18 @@ export default {
     width: 80,
     height: 80,
     advancedF2lth: {
-      case01: ["Fw R Fw'"],
-      case02: ["Fw R' Fw'"],
-      case03: ["U R' F R F' R' U' R"],
-      case04: ["U R2 U' R' U R U' R"],
-      case05: ["U2 L2 U2 L U L' U L2"],
+      "1": ["Fw R Fw'"],
+      "2": ["Fw R' Fw'"],
+      "3": ["U R' F R F' R' U' R"],
+      "4": ["U R2 U' R' U R U' R"],
+      "5": ["U2 L2 U2 L U L' U L2"],
     },
     advancedF2loh: {
-      case06: ["R U' R U2 R2 U' R2 U' R2"],
+      "6": ["R U' R U2 R2 U' R2 U' R2"],
     }
   }),
   mounted() {
+    if(window.innerWidth >= 768) this.width = 80; this.height = 80;
     let paramter = []
     for(let key in this.advancedF2lth) {
       paramter[key] = {}

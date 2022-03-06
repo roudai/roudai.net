@@ -12,12 +12,12 @@
         </b-nav-item-dropdown>
 
         <b-nav-item-dropdown text="OLL" left>
-          <b-dropdown-item to="#">OLL一覧</b-dropdown-item>
-          <b-dropdown-item to="#">OLL手順</b-dropdown-item>
-          <b-dropdown-item to="#">CxLL</b-dropdown-item>
+          <b-dropdown-item to="/oll/oll-view">OLL一覧</b-dropdown-item>
+          <b-dropdown-item to="/oll/oll">OLL手順</b-dropdown-item>
+          <b-dropdown-item to="/oll/cxll">CxLL</b-dropdown-item>
         </b-nav-item-dropdown>
 
-        <b-nav-item-dropdown text="PLL" left>
+        <!-- <b-nav-item-dropdown text="PLL" left>
           <b-dropdown-item to="#">PLL一覧</b-dropdown-item>
           <b-dropdown-item to="#">PLLの確率</b-dropdown-item>
           <b-dropdown-item to="#">PLL手順</b-dropdown-item>
@@ -48,7 +48,7 @@
           <b-dropdown-item to="#">ルービックキューブ各種解法</b-dropdown-item>
           <b-dropdown-item to="#">ルービックキューブの早解きについて知らない方々に知っておいて欲しいこと</b-dropdown-item>
           <b-dropdown-item to="#">社会人がスピードキューブを続ける意味について</b-dropdown-item>
-        </b-nav-item-dropdown>
+        </b-nav-item-dropdown> -->
       </b-navbar-nav>
     </b-navbar>
   </div>

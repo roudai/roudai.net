@@ -11,9 +11,9 @@
 
 <style>
   .entry-container {
-      padding: 35px;
+      padding: 20px;
   }
   .list-group-item {
-    padding: 0rem 1rem;
+    padding: 0rem 0.5rem;
   }
 </style>
