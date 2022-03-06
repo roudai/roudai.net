@@ -19,8 +19,8 @@ export default {
   data: () => ({
     mask: "f2l",
     viewportRotations: [ [ 1, 30 ], [ 0, -34 ], [ 2, 0 ] ],
-    width: 60,
-    height: 60,
+    width: 80,
+    height: 80,
     f2l: {
       "1": ["U R U' R'"],
       "2": ["F R' F' R", "y' U' R' U R"],
@@ -66,7 +66,6 @@ export default {
     }
   }),
   mounted() {
-    if(window.innerWidth >= 768) this.width = 80; this.height = 80;
     let paramter = []
     for(let key in this.f2l) {
       paramter[key] = {}

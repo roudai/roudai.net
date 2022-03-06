@@ -14,7 +14,7 @@
         <b-nav-item-dropdown text="OLL" left>
           <b-dropdown-item to="/oll/oll-view">OLL一覧</b-dropdown-item>
           <b-dropdown-item to="/oll/oll">OLL手順</b-dropdown-item>
-          <b-dropdown-item to="/oll/cxll">CxLL</b-dropdown-item>
+          <b-dropdown-item to="/oll/coll">COLL</b-dropdown-item>
         </b-nav-item-dropdown>
 
         <!-- <b-nav-item-dropdown text="PLL" left>

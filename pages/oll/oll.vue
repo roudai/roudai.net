@@ -83,7 +83,6 @@ export default {
     }
   }),
   mounted() {
-    if(window.innerWidth >= 768) this.width = 80; this.height = 80;
     let paramter = []
     for(let key in this.oll) {
       paramter[key] = {}

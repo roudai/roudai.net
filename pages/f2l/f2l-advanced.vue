@@ -37,11 +37,10 @@ export default {
       "5": ["U2 L2 U2 L U L' U L2"],
     },
     advancedF2loh: {
-      "6": ["R U' R U2 R2 U' R2 U' R2"],
+      "7": ["R U' R U2 R2 U' R2 U' R2"],
     }
   }),
   mounted() {
-    if(window.innerWidth >= 768) this.width = 80; this.height = 80;
     let paramter = []
     for(let key in this.advancedF2lth) {
       paramter[key] = {}
