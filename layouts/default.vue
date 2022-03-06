@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-light">
     <b-container>
       <nav-bar />
       <b-container class="entry-container">
@@ -19,6 +19,8 @@
   }
   .list-group-item {
     padding: 0rem 0.5rem;
+    display:flex;
+    align-items:center;
   }
   h3 {
     margin-top: 1rem;

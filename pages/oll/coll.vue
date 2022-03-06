@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>発展系F2L</h2>
+    <h2>COLL</h2>
     <h3>OLL n21 H Orientation</h3>
     <b-list-group horizontal v-for="(item, index) in COLLn21" :key="index">
       <b-list-group-item><div :id="'COLLn21' + index"></div></b-list-group-item>
