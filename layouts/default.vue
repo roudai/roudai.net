@@ -1,6 +1,6 @@
 <template>
   <div class="bg-light">
-    <b-container>
+    <b-container fluid="xl">
       <nav-bar />
       <b-container class="entry-container">
         <nuxt />
@@ -10,7 +10,7 @@
 </template>
 
 <style>
-  .container{
+  .container-xl{
       padding-right: 0px;
       padding-left: 0px;
   }
