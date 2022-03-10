@@ -19,7 +19,7 @@
   }
   .list-group-item {
     padding: 0rem 0.5rem;
-    display:flex;
+    display:grid;
     align-items:center;
   }
   h3 {
