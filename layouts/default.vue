@@ -13,6 +13,7 @@
   .container-xl{
       padding-right: 0px;
       padding-left: 0px;
+      max-width: 720px;
   }
   .entry-container {
       padding: 20px;
