@@ -1,28 +1,7 @@
 <template>
   <div>
     <h2>PLL手順</h2>
-    <h3 v-text="pllName['name1']"></h3>
-    <b-list-group horizontal>
-      <b-list-group-item><div id="pll1"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill"><div v-for="item in pll[1]" :key="item">{{ item }}</div></b-list-group-item>
-    </b-list-group>
-    <!-- <h3 v-text="pllName['name2']"></h3>
-    <b-list-group horizontal>
-      <b-list-group-item><div id="pll2"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill"><div v-for="item in pll[2]" :key="item">{{ item }}</div></b-list-group-item>
-    </b-list-group>
-    <h3 v-text="pllName['name3']"></h3>
-    <b-list-group horizontal>
-      <b-list-group-item><div id="pll3"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill"><div v-for="item in pll[3]" :key="item">{{ item }}</div></b-list-group-item>
-    </b-list-group>
-    <h3 v-text="pllName['name4']"></h3>
-    <b-list-group horizontal>
-      <b-list-group-item><div id="pll4"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill"><div v-for="item in pll[4]" :key="item">{{ item }}</div></b-list-group-item>
-    </b-list-group> -->
-
-    <div v-for="n of 10" :key="n">
+    <div v-for="n of 21" :key="n">
       <h3 v-text="pllName['name' + n]"></h3>
       <b-list-group horizontal>
         <b-list-group-item><div :id="'pll' + n"></div></b-list-group-item>
@@ -40,8 +19,8 @@ export default {
   data: () => ({
     mask: "pll",
     view: "plan",
-    width: 120,
-    height: 120,
+    width: 80,
+    height: 80,
     pll:{
      "1": [
       "両手：R2 U R U R' U' R' U' R' U R'",
@@ -94,18 +73,81 @@ export default {
       "両手：R' U2 R' U' y R' F' R2 U' R' U R' F R U' F",
       "片手：x R2 U R U' R' y R' U' R U x U'2 R U' R' U R",
       "最少：L B2 F' D2 B R' B' D2 F2 L' F' L B2 L'（14手）",
-     ] },
+     ],
+     "11": [
+      "両手、片手、最少：R' U2 R U'2 R' F R U R' U' R' F' R2 U'（14手）",
+     ],
+     "12": [
+      "両手、片手：R U' R' U' R U R D R' U' R D' R' U'2 R' U'",
+      "両手、最少：L U2 L' U2 L F' L' U' L U Rw U Rw'2 F（14手）",
+      "両手：	x' R' U' F' U R' U' x U R' U' R' U R B R'2",
+     ],
+     "13": [
+      "両手：R U R' F' R U R' U' R' F R2 U' R' U'",
+      "片手：R U'2 R' U' R U'2 ",
+      "最少：B2 L U L' B2 R D' R D R2（10手）",
+     ],
+     "14": [
+      "両手：R' U L' U2 R U' R' U2 L R U'",
+      "両手：L' U R' z R2 U R' U' R2 U D R'",
+      "片手：L' U2 L U L' U2 R U' L U R'",
+      "最少：B2 R' U' R B2 L' D L' D' L2（10手）",
+     ],
+     "15": [
+      "両手：F R U' R' U' R U R' F' R U R' U' R' F R F'",
+      "片手：R2 U' R' U R U' x' U' R' D R' D' R' U R",
+      "最少：R2 U' R2 U' R2 U F U F' R2 F U' F'（13手）",
+     ],
+     "16": [
+      "両手：D' R U R' U' D R2 U' R U' R' U R' U R2 U",
+      "両手、片手、最少：R U R' y' R2 Uw' R U' R' U R' Uw R2（12手）",
+     ],
+     "17": [
+      "両手：U' R2 U' R U' R U R' U R2 D' U R U' R' D",
+      "両手、片手、最少：R'2 Uw' R U' R U R' Uw R2 y R U' R'（12手）",
+      "両手：R'2 F2 R U2 R U2 R' F R U R' U' R' F R2",
+     ],
+     "18": [
+      "両手：U R2 U R' U R' U'R U' R2 D U' R' U R D'",
+      "両手、最少：R2 Uw R' U R' U' R U'w R'2 F' U F（12手）",
+      "片手：	z U'2 Rw U' R U' R' U Rw' U'2 x' U' R U",
+     ],
+     "19": [
+      "両手：D R' U' R U D' R2 U R' U R U' R U' R2′ U'",
+      "両手、最少：L' U' L y' R2 Uw R' U R U' R Uw' R'2（12手）",
+      "両手、片手：R' U' R y R2 Uw R' U R U' R Uw' R'2",
+     ],
+     "20": [
+      "両手：R' U R U' R' F' U' F R U R' F R' F' R U' R",
+      "片手、最少：R' U L' U2 R U' R' L U L' U2 R U' L（14手）",
+     ],
+     "21": [
+      "両手：R U' R' U Lw U F U' R' F' R U' R U Lw' U ",
+      "両手：R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+      "片手、最少：L U' R U'2 L' U L R' U' R U2 L U R'（14手）",
+     ], },
     pllArrow:{
       arrow1: "U3U5-s7-red,U5U7-s7-red,U7U3-s7-red",
       arrow2: "U5U3-s7-red,U7U5-s7-red,U3U7-s7-red",
       arrow3: "U2U6-s8-red,U6U8-s8-red,U8U2-s8-red",
       arrow4: "U6U2-s8-red,U8U6-s8-red,U2U8-s8-red",
-      arrow5: "",
-      arrow6: "",
-      arrow7: "",
-      arrow8: "",
-      arrow9: "",
-      arrow10: "",
+      arrow5: "U1U3-red,U3U1-red,U5U7-red,U7U5-red",
+      arrow6: "U1U7-red,U7U1-red,U3U5-red,U5U3-red",
+      arrow7: "U0U6-red,U6U0-red,U2U8-red,U8U2-red",
+      arrow8: "U2U8-red,U8U2-red,U3U5-s8-red,U5U3-s8-red",
+      arrow9: "U0U8-red,U8U0-red,U1U5-red,U5U1-red",
+      arrow10: "U1U7-red,U7U1-red,U2U8-red,U8U2-red",
+      arrow11: "",
+      arrow12: "",
+      arrow13: "",
+      arrow14: "",
+      arrow15: "",
+      arrow16: "",
+      arrow17: "",
+      arrow18: "",
+      arrow19: "",
+      arrow20: "",
+      arrow21: "",
     },
     pllName:{
       name1: "U.a Permutation",
@@ -118,6 +160,17 @@ export default {
       name8: "T Permutation",
       name9: "V Permutation",
       name10: "F Permutation",
+      name11: "R.a Permutation",
+      name12: "R.b Permutation",
+      name13: "J.b Permutation",
+      name14: "J.a Permutation",
+      name15: "Y Permutation",
+      name16: "G.a Permutation",
+      name17: "G.b Permutation",
+      name18: "G.d Permutation",
+      name19: "G.c Permutation",
+      name20: "N.b Permutation",
+      name21: "N.a Permutation",
     }
   }),
   mounted() {

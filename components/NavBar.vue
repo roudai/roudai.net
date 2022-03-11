@@ -26,16 +26,16 @@
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="BLD" left>
-            <b-dropdown-item to="#">ルービックキューブを目隠しで揃えるには</b-dropdown-item>
-            <b-dropdown-item to="#">ルービックキューブ目隠しの解法</b-dropdown-item>
-            <b-dropdown-item to="#">Old Pochmann method (corner)</b-dropdown-item>
+            <b-dropdown-item to="/bld/bld-introduction">ルービックキューブを目隠しで揃えるには</b-dropdown-item>
+            <b-dropdown-item to="/bld/bld-method">ルービックキューブ目隠しの解法</b-dropdown-item>
+            <b-dropdown-item to="/bld/old-pochmann-corner">Old Pochmann method (corner)</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="Megaminx" left>
-            <b-dropdown-item to="#">Megaminx EO</b-dropdown-item>
-            <b-dropdown-item to="#">Megaminx CO</b-dropdown-item>
-            <b-dropdown-item to="#">Megaminx EP</b-dropdown-item>
-            <b-dropdown-item to="#">Megaminx CP</b-dropdown-item>
+            <b-dropdown-item to="/megaminx/megaminx-eo">Megaminx EO</b-dropdown-item>
+            <b-dropdown-item to="/megaminx/megaminx-co">Megaminx CO</b-dropdown-item>
+            <b-dropdown-item to="/megaminx/megaminx-ep">Megaminx EP</b-dropdown-item>
+            <b-dropdown-item to="/megaminx/megaminx-cp">Megaminx CP</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="FMC" left>
