@@ -1,8 +1,24 @@
 <template>
   <div>
-    <div id="EO1"></div>
-    <div id="EO2"></div>
-    <div id="EO3"></div>
+    <h2>Megaminx EO</h2>
+    <h3>2つ反転</h3>
+    <h4>隣り合った2つ反転</h4>
+    <b-list-group horizontal>
+      <b-list-group-item><div id="EO1"></div></b-list-group-item>
+      <b-list-group-item class="flex-fill">{{ caseEO1 }}</b-list-group-item>
+    </b-list-group>
+    
+    <h4>離れた2つ反転</h4>
+    <b-list-group horizontal>
+      <b-list-group-item><div id="EO2"></div></b-list-group-item>
+      <b-list-group-item class="flex-fill">{{ caseEO2 }}</b-list-group-item>
+    </b-list-group>
+
+    <h3>4つ反転</h3>
+    <b-list-group horizontal>
+      <b-list-group-item><div id="EO3"></div></b-list-group-item>
+      <b-list-group-item class="flex-fill">{{ caseEO3 }}</b-list-group-item>
+    </b-list-group>
   </div>
 </template>
 
@@ -11,8 +27,9 @@ import { PNG, Canvas, Type } from "sr-puzzlegen"
 
 export default {
   data: () => ({
-    width: 250,
-    height: 250,
+    width: 120,
+    height: 120,
+    stroke: 0.01,
     maskOLL: {
       "F": [0,1,2,3,4,5,6,7,8,9,10],
       "R": [0,1,2,3,4,5,6,7,8,9,10],
@@ -34,6 +51,7 @@ export default {
     let options = {}
     options.width = this.width
     options.height = this.height
+    options.stroke = this.stroke
     options.puzzle = {case: this.caseEO1, mask: this.maskOLL}
     Canvas("#EO1", Type.MEGAMINX_TOP, options);
 

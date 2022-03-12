@@ -48,7 +48,8 @@ export default {
     },
     extend (config) {
       config.performance.maxAssetSize = 700 * 1024
-    }
+    },
+    transpile: ['sr-puzzlegen'],
   },
 
   router: {
