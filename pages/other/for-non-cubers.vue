@@ -2,8 +2,7 @@
   <div>
     <h2>ルービックキューブの早解きについて知らない方々に知っておいて欲しいこと</h2>
     <p>
-      このページの元ネタは、アメリカ在住の日本人キューバー、Mackyの下記の記事です。
-      <a href="http://www.cubefreak.net/articles/fornoncubers.php">http://www.cubefreak.net/articles/fornoncubers.php</a>
+      このページの元ネタは、アメリカ在住の日本人キューバー、<a href="http://www.cubefreak.net/articles/fornoncubers.php">Mackyの記事</a>です。
     </p>
 
     <h3>キューバー（キュービスト）について</h3>
