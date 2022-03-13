@@ -27,9 +27,7 @@ export default {
     options.height = this.height
     options.strokeWidth = this.strokeWidth
     options.puzzle = {case: this.caseEP1}
-    console.log(options)
     Canvas("#EP1", Type.MEGAMINX_TOP, options);
-
   }
 }
 </script>
