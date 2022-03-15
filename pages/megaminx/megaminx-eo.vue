@@ -48,11 +48,17 @@ export default {
     caseEO3: "R BR BL U BL' U BR' U'2 R'",
   }),
   mounted() {
-    let options = {}
-    options.width = this.width
-    options.height = this.height
-    options.stroke = this.stroke
-    options.puzzle = {case: this.caseEO1, mask: this.maskOLL}
+    // let options = {}
+    // options.width = this.width
+    // options.height = this.height
+    // options.stroke = this.stroke
+    // options.puzzle = {case: this.caseEO1, mask: this.maskOLL}
+    let options = {
+      "width": 120,
+      "height": 120,
+      "strokeWidth": 0.01
+    };
+
     Canvas("#EO1", Type.MEGAMINX_TOP, options);
 
     options.puzzle = {case: this.caseEO2, mask: this.maskOLL}

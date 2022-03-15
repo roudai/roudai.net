@@ -58,7 +58,7 @@ export default {
       33: ["R U R' U' R' F R F'"],
       34: ["R U R' U' y' Rw' U' R U M'"],
       35: ["R U'2 R'2 F R F' R U'2 R'"],
-      36: ["R' U' R U' R' U R U x' R U' R' U x"],
+      36: ["R U R' F' R U R' U' R' F R U' R' F R F'", "R' U' R U' R' U R U x' R U' R' U x"],
       37: ["F R U' R' U' R U R' F'", "F R' F' R U R U' R'"],
       38: ["R U R' U R U' R' U' R' F R F'"],
       39: ["L F' L' U' L U y' R U' F'", "y2 R U R' F' U' F U R U2 R'"],
@@ -78,7 +78,7 @@ export default {
       53: ["Rw' U' R U' R' U R U' R' U2 Rw"],
       54: ["Rw U R' U R U' R' U R U'2 Rw'"],
       55: ["y R' F R U R U' R2 F' R2 U' R' U R U R'", "R U'2 R2 U' R U' R' U'2 F R F'"],
-      56: ["F R U R' U' R F' Rw U R' U' Rw'"],
+      56: ["Rw' U' Rw U' R' U R U' R' U R Rw' U Rw", "F R U R' U' R F' Rw U R' U' Rw'"],
       57: ["R U R' U' M' U R U' Rw'"],
     }
   }),

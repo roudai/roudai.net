@@ -43,6 +43,13 @@
         <div>{{ item[0] }}</div>
       </b-list-group-item>
     </b-list-group>
+    <h3>OLL n27 Anti-Sune Orientation</h3>
+    <b-list-group horizontal v-for="(item, index) in COLLn27" :key="index">
+      <b-list-group-item><div :id="'COLLn27' + index"></div></b-list-group-item>
+      <b-list-group-item class="flex-fill">
+        <div>{{ item[0] }}</div>
+      </b-list-group-item>
+    </b-list-group>
   </div>
 </template>
 
@@ -56,6 +63,7 @@ export default {
     viewportRotations: [ [ 1, 30 ], [ 0, -34 ], [ 2, 0 ] ],
     width: 80,
     height: 80,
+    rotate: "",
     COLLn21: {
       "n21-1": ["F R U R' U' R U R' U' R U R' U' F'"],
       "n21-2": ["R U2 R' U' R U R' U' R U' R'"],
@@ -95,20 +103,20 @@ export default {
       "n25-6": ["(U) R' U' R U' R' U R U' R' U R U' R' U2 R"],
     },
     COLLn26: {
-      "n26-1": ["(U) R U R' U R U2 R'"],
-      "n26-2": ["(U') R U R' U R2 D R' U2 R D' R2′"],
-      "n26-3": ["(U') R2′ D' R U2 R' D R2 U R' U R"],
-      "n26-4": ["R U R' U R U' R D R' U' R D' R2′"],
-      "n26-5": ["(U) R U' L' U R' U' L"],
-      "n26-6": ["(U') R U R' U L' U R U' L U2 R'"],
+      "n26-1": ["R U R' U R U2' R'"],
+      "n26-2": ["F' R U2' R' U2 R' F2 R U R U' R' F'"],
+      "n26-3": ["R U' L' U R' U' L"],
+      "n26-4": ["L' R U R' U' L U2 R U2' R'"],
+      "n26-5": ["L' U2 L U2' R U' L' U L R'"],
+      "n26-6": ["(U') R U R' U R U' R D R' U' R D' R2'"],
     },
     COLLn27: {
-      "n27-1": [""],
-      "n27-2": [""],
-      "n27-3": [""],
-      "n27-4": [""],
-      "n27-5": [""],
-      "n27-6": [""],
+      "n27-1": ["R' U' R U' R' U2 R"],
+      "n27-2": ["R U' R' U2 R U' R' U2 R' D' R U R' D R"],
+      "n27-3": ["R' U L U' R U L'"],
+      "n27-4": ["L R' U' R U L' U2 R' U2 R"],
+      "n27-5": ["R' U' R U R' F R U R' U' R' F' R2"],
+      "n27-6": ["(U) R' U' R U' R' U R' D' R U R' D R2"],
     },
   }),
   mounted() {
@@ -177,6 +185,17 @@ export default {
       paramter[key].height = this.height
       paramter[key].case = this.COLLn26[key][0]
       SRVisualizer.cubePNG(document.getElementById('COLLn26' + key), paramter[key])
+    }
+
+    for(let key in this.COLLn27) {
+      paramter[key] = {}
+      paramter[key].view = this.view
+      paramter[key].mask = this.mask
+      paramter[key].viewportRotations = this.viewportRotations
+      paramter[key].width = this.width
+      paramter[key].height = this.height
+      paramter[key].case = this.COLLn27[key][0]
+      SRVisualizer.cubePNG(document.getElementById('COLLn27' + key), paramter[key])
     }
   },
 }
