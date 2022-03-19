@@ -5,55 +5,55 @@
     <b-col cols="3">PLL03,04</b-col>
     <b-col cols="3">A-Perm</b-col>
     <b-col cols="3"><div id="PLL1"></div></b-col>
-    <b-col cols="3"><img src="pll/01_U-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/01_U-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"><div id="PLL2"></div></b-col>
-    <b-col cols="3"><img src="pll/02_A-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/02_A-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3">PLL05</b-col>
     <b-col cols="3">U-Perm</b-col>
     <b-col cols="3">PLL06</b-col>
     <b-col cols="3">A-Perm</b-col>
     <b-col cols="3"><div id="PLL3"></div></b-col>
-    <b-col cols="3"><img src="pll/03_Z-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/03_Z-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"><div id="PLL4"></div></b-col>
-    <b-col cols="3"><img src="pll/04_H-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/04_H-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3">PLL07</b-col>
     <b-col cols="3">U-Perm</b-col>
     <b-col cols="3">PLL08</b-col>
     <b-col cols="3">A-Perm</b-col>
     <b-col cols="3"><div id="PLL5"></div></b-col>
-    <b-col cols="3"><img src="pll/05_E-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/05_E-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"><div id="PLL6"></div></b-col>
-    <b-col cols="3"><img src="pll/06_T-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/06_T-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3">PLL09</b-col>
     <b-col cols="3">U-Perm</b-col>
     <b-col cols="3">PLL10</b-col>
     <b-col cols="3">A-Perm</b-col>
     <b-col cols="3"><div id="PLL7"></div></b-col>
-    <b-col cols="3"><img src="pll/07_V-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/07_V-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"><div id="PLL8"></div></b-col>
-    <b-col cols="3"><img src="pll/08_F-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/08_F-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3">PLL11,12</b-col>
     <b-col cols="3">U-Perm</b-col>
     <b-col cols="3">PLL13,14</b-col>
     <b-col cols="3">A-Perm</b-col>
     <b-col cols="3"><div id="PLL9"></div></b-col>
-    <b-col cols="3"><img src="pll/09_R-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/09_R-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"><div id="PLL10"></div></b-col>
-    <b-col cols="3"><img src="pll/10_J-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/10_J-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3">PLL15</b-col>
     <b-col cols="3">U-Perm</b-col>
     <b-col cols="3">PLL16-19</b-col>
     <b-col cols="3">A-Perm</b-col>
     <b-col cols="3"><div id="PLL11"></div></b-col>
-    <b-col cols="3"><img src="pll/11_Y-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/11_Y-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"><div id="PLL12"></div></b-col>
-    <b-col cols="3"><img src="pll/12_G-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/12_G-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3">PLL20,21</b-col>
     <b-col cols="3">N-Perm</b-col>
     <b-col cols="3"></b-col>
     <b-col cols="3"></b-col>
     <b-col cols="3"><div id="PLL13"></div></b-col>
-    <b-col cols="3"><img src="pll/13_N-Perm.gif" :width="width" :height="height"></b-col>
+    <b-col cols="3"><img src="~/assets/images/pll/13_N-Perm.gif" :width="width" :height="height"></b-col>
     <b-col cols="3"></b-col>
     <b-col cols="3"></b-col>
   </b-row>
