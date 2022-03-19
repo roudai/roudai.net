@@ -65,10 +65,10 @@ export default {
     height: 80,
     rotate: "",
     COLLn21: {
-      "n21-1": ["F R U R' U' R U R' U' R U R' U' F'"],
-      "n21-2": ["R U2 R' U' R U R' U' R U' R'"],
-      "n21-3": ["(U') R U R' U R U L' U R' U' L"],
-      "n21-4": ["(U') F R U' R' U R U2 R' U' R U R' U' F'"],
+      "n21-1": ["(U) F R U R' U' R U R' U' R U R' U' F'"],
+      "n21-2": ["(U) R U2 R' U' R U R' U' R U' R'"],
+      "n21-3": ["R U R' U R U L' U R' U' L"],
+      "n21-4": ["F R U' R' U R U2 R' U' R U R' U' F'"],
     },
     COLLn22: {
       "n22-1": ["R U2 R2 U' R2 U' R2 U2 R"],
