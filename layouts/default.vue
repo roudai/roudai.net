@@ -1,14 +1,14 @@
 <template>
   <div class="bg-light">
-    <template>
-      <adsbygoogle ad-slot="3419590651" />
-    </template>
     <b-container fluid="xl">
       <nav-bar />
       <b-container class="entry-container">
         <nuxt />
       </b-container>
       <Footer />
+      <template>
+        <adsbygoogle ad-slot="3419590651" />
+      </template>
     </b-container>
   </div>
 </template>
