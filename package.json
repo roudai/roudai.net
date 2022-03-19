@@ -20,6 +20,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@nuxtjs/google-adsense": "^2.0.0"
+    "@nuxtjs/google-adsense": "^2.0.0",
+    "@nuxtjs/google-gtag": "^1.0.4"
   }
 }

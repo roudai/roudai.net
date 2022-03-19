@@ -6,10 +6,8 @@
         <nuxt />
       </b-container>
       <Footer />
-      <template>
-        <adsbygoogle ad-slot="3419590651" />
-      </template>
     </b-container>
+    <Adsense />
   </div>
 </template>
 

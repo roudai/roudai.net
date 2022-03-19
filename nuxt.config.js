@@ -38,12 +38,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    '@nuxtjs/google-adsense'
+    '@nuxtjs/google-adsense',
+    '@nuxtjs/google-gtag'
   ],
 
   'google-adsense': {
     id: 'ca-pub-3099989327540541',
     pageLevelAds: true,
+  },
+
+  '@nuxtjs/google-gtag': {
+    id: 'G-HN5BK3L4RW',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
