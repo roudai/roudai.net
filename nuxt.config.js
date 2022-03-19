@@ -51,8 +51,4 @@ export default {
     },
     transpile: ['sr-puzzlegen'],
   },
-
-  router: {
-    base: '/roudai.net/'
-  },
 }
