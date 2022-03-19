@@ -5,6 +5,7 @@
       <b-container class="entry-container">
         <nuxt />
       </b-container>
+      <Footer />
     </b-container>
   </div>
 </template>
