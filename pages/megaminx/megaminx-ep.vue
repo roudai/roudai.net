@@ -1,33 +1,28 @@
 <template>
   <div>
     <h2>Megaminx EP</h2>
-    <h3>2つ反転</h3>
-    <h4>隣り合った3点交換</h4>
-    <b-list-group horizontal>
-      <b-list-group-item><div id="EP1"></div></b-list-group-item>
-      <b-list-group-item class="flex-fill">{{ caseEP1 }}</b-list-group-item>
-    </b-list-group>
-
+    <h3>隣り合った3点交換</h3>
+    <div>
+      <b>時計回り（コーナー干渉あり）</b><br>
+      U R U R'2 F' R U R U' R' F R U' R'<br>
+      <b>反時計回り（コーナー干渉あり）</b><br>
+      R U R' F' R U R' U' R' F R2 U' R' U' (J-Perm)<br>
+      <b>時計回り（コーナー干渉なし）</b><br>
+      R' U' R U' R U R'2 U R U' R U' R' U2<br>
+      <b>反時計回り（コーナー干渉なし）</b><br>
+      U'2 R U R' U R' U' R2 U' R' U R' U R
+    </div>
+    <h3>離れた3点交換</h3>
+    <div>
+      <b>時計回り（コーナー干渉あり）</b><br>
+      R2 U'2 R'2 U' R2 U'2 R'2 <br>  
+      <b>反時計回り（コーナー干渉あり）</b><br>
+      R2 U2 R'2 U R2 U2 R'2 <br>
+      R U R' U' R' F R2 U' R' U' R U R' F' (T-Perm) <br>
+      <b>時計回り（コーナー干渉なし）</b><br>
+      R U R' U2 R' U' R U' R U R'2 U R U' R U'2 R'<br>
+      <b>反時計回り（コーナー干渉なし）</b><br>
+      R U2 R' U R' U' R2 U' R' U R' U R U'2 R U' R'
+    </div>
   </div>
 </template>
-
-<script>
-import { PNG, Canvas, Type } from "sr-puzzlegen"
-
-export default {
-  data: () => ({
-    width: 120,
-    height: 120,
-    strokeWidth: 0.05,
-    caseEP1: "U (u2) R U R' F' R U R' U' R' F R2 U' R' U'",
-  }),
-  mounted() {
-    let options = {}
-    options.width = this.width
-    options.height = this.height
-    options.strokeWidth = this.strokeWidth
-    options.puzzle = {case: this.caseEP1}
-    Canvas("#EP1", Type.MEGAMINX_TOP, options);
-  }
-}
-</script>

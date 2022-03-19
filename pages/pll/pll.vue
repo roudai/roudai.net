@@ -44,8 +44,8 @@ export default {
       "両手：x R' U R' D2 R U' R' D2 R2",
      ],
      "5": [
-      "両手、片手：U R' U' R U' R U R U' R' U R U R2 U' R' U",
-      "両手：U' M' U M'2 U M'2 U M' U2 M'2",
+      "両手：M' U M'2 U M'2 U M' U2 M'2 U'",
+      "両手、片手：(U) U R' U' R U' R U R U' R' U R U R2 U' R' U",
       "最少：M2 U' x M2 U2 M2 U2 x' U M2（12手）",
      ],
      "6": [
@@ -64,6 +64,7 @@ export default {
       "両手、最少：	z U2 R' U2 R U2 x U2 R U2 Rw' U2 Rw（11手）",
      ],
      "9": [
+      "両手：R' U R U' R' Fw' U' R U2 R' U' R U' R' Fw R", 
       "両手、最少：R' U R' U' y R' F' R2 U' R' U R' F R F（14手）",
       "両手：L' U L' U' y' R' F' R2 U' R' U R' F R F",
       "片手：y R U'2 R' U'2 L' U R U' L U' L' U R' U' L",
@@ -122,8 +123,8 @@ export default {
       "片手、最少：R' U L' U2 R U' R' L U L' U2 R U' L（14手）",
      ],
      "21": [
-      "両手：R U' R' U Lw U F U' R' F' R U' R U Lw' U R'",
       "両手：R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
+      "両手：R U' R' U Lw U F U' R' F' R U' R U Lw' U R'",
       "片手、最少：L U' R U'2 L' U L R' U' R U2 L U R'（14手）",
      ], },
     pllArrow:{
@@ -131,7 +132,7 @@ export default {
       arrow2: "U5U3-s7-red,U7U5-s7-red,U3U7-s7-red",
       arrow3: "U2U6-s8-red,U6U8-s8-red,U8U2-s8-red",
       arrow4: "U6U2-s8-red,U8U6-s8-red,U2U8-s8-red",
-      arrow5: "U1U3-red,U3U1-red,U5U7-red,U7U5-red",
+      arrow5: "U1U5-red,U5U1-red,U3U7-red,U7U3-red",
       arrow6: "U1U7-red,U7U1-red,U3U5-red,U5U3-red",
       arrow7: "U0U6-red,U6U0-red,U2U8-red,U8U2-red",
       arrow8: "U2U8-red,U8U2-red,U3U5-s8-red,U5U3-s8-red",

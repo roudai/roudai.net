@@ -39,13 +39,13 @@
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="FMC" left>
-            <b-dropdown-item to="/fmc/intro-fmc">ルービックキューブ最少手数競技の紹介</b-dropdown-item>
+            <b-dropdown-item to="/fmc/intro-fmc">最少手数競技の紹介</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="Other" left>
-            <b-dropdown-item to="/other/3x3x3-method">ルービックキューブ各種解法</b-dropdown-item>
-            <b-dropdown-item to="/other/for-non-cubers">ルービックキューブの早解きについて知らない方々に知っておいて欲しいこと</b-dropdown-item>
-            <b-dropdown-item to="/other/advent-calendar2014">社会人がスピードキューブを続ける意味について</b-dropdown-item>
+            <b-dropdown-item to="/other/3x3x3-method">各種解法</b-dropdown-item>
+            <b-dropdown-item to="/other/for-non-cubers">知っておいて欲しいこと</b-dropdown-item>
+            <b-dropdown-item to="/other/advent-calendar2014">続ける意味について</b-dropdown-item>
           </b-nav-item-dropdown>
           
           <b-nav-item-dropdown text="Tools" left>
