@@ -6,16 +6,20 @@
       中級～上級者向けのため、これからスピードキューブを始める初心者の方にはおすすめしません（というか見ても分かりません）。
     </p>
     <p>
-      初めてルービックキューブをさせる方は、下記をどうぞ。<br>
-      <a href="https://toribo.jp/">https://toribo.jp/</a>
+      ルービックキューブを揃えてみたい！という方は、下記をどうぞ。<br>
+      <a href="https://toribo.jp/">TORIBO&reg; PUZZLES&STICKERS</a>
+    </p>
+    <p>
+      ホームページへのご意見、ご要望等は、GitHubのIssuesへよろしくお願いします（通常の掲示板と同様の使い方で結構です）。<br>
+      <a href="https://github.com/roudai/roudai.net/issues">Issues</a>
     </p>
 
     <h5>管理人について</h5>
     <p>
       ハンドルネーム：ろーだい<br>
       ツイッター：<a href="https://twitter.com/roudainet">@roudainet</a><br>
-      Youtube：<a href="http://www.youtube.com/user/roudai">http://www.youtube.com/user/roudai</a><br>
-      公式記録：<a href="https://www.worldcubeassociation.org/persons/2009ISHI01">WCA</a>
+      Youtube：<a href="http://www.youtube.com/user/roudai">roudai</a><br>
+      公式記録：<a href="https://www.worldcubeassociation.org/persons/2009ISHI01">2009ISHI01</a>
     </p>
 
     <h5>主な公式記録（平均）</h5>
