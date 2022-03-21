@@ -47,7 +47,7 @@ export default {
     pageLevelAds: true,
   },
 
-  '@nuxtjs/google-gtag': {
+  'google-gtag': {
     id: 'G-HN5BK3L4RW',
   },
 
