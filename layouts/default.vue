@@ -7,7 +7,6 @@
       </b-container>
       <Footer />
     </b-container>
-    <Adsense />
   </div>
 </template>
 
