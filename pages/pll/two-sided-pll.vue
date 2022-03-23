@@ -2,6 +2,10 @@
   <div>
     <h2>PLL 2側面判断</h2>
     <p>
+      この記事は、<a href="http://cubing.pt/wp-content/uploads/2017/03/pll2side-20140531.pdf">Mark49152’s Two-Sided PLL Recognition Guide</a>
+      を日本語化、加筆したものです。
+    </p>
+    <p>
       PLLの2側面判断は、下記の4つを判断基準とします。
     </p>
     <ol>
@@ -10,6 +14,15 @@
       <li>2-BAR：1面に同じ色が2つ並んでいる</li>
       <li>BOOKEND：2側面を見たとき、左面の左端と右面の右端が同じ色（本立てが本の両サイドを挟んでいるイメージ）</li>
     </ol>
+    <p>
+      下記9つのパターンから最初に当てはまるものを探し、その中でさらに最初に当てはまるケースを探します。
+    </p>
+    <p>
+      各パターンには4色のパターン違い、さらに左右ミラーのパターンがあります。
+    </p>
+    <p>
+      「対面色」は反対面の色（緑の場合青、等）、「隣接色」は隣面の色（緑の場合赤とオレンジ、等）を表します。
+    </p>
     <div class="accordion" role="tablist">
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
@@ -23,7 +36,7 @@
             <b-card-text>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/3-BAR_1.png" :width="iwidth" :height="iheight"><br>
-                headlights = U
+                もう一面がLights = U
                 <b-row>
                   <b-col><div id="pll_3BAR0"></div></b-col>
                   <b-col><div id="pll_3BAR1"></div></b-col>
@@ -33,7 +46,7 @@
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/3-BAR_2.png" :width="iwidth" :height="iheight"><br>
-                2-bar = J
+                もう一面が2-bar = J
                 <b-row>
                   <b-col><div id="pll_3BAR2"></div></b-col>
                   <b-col></b-col>
@@ -43,7 +56,7 @@
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/3-BAR_3.png" :width="iwidth" :height="iheight"><br>
-                2-bar = J
+                もう一面が2-bar = J
                 <b-row>
                   <b-col><div id="pll_3BAR3"></div></b-col>
                   <b-col></b-col>
@@ -53,7 +66,7 @@
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/3-BAR_4.png" :width="iwidth" :height="iheight"><br>
-                4 Colors = F
+                4色 = F
                 <b-row>
                   <b-col><div id="pll_3BAR4"></div></b-col>
                   <b-col></b-col>
@@ -78,9 +91,9 @@
             <b-card-text>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/Double_lights_1.png" :width="iwidth" :height="iheight"><br>
-                2-color 6-checker = Z
+                2色6チェッカー = Z
                 <b-row>
-                  <b-col></b-col>
+                  <b-col><div id="pll_DoubleLights0"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
@@ -88,9 +101,9 @@
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/Double_lights_2.png" :width="iwidth" :height="iheight"><br>
-                adj edges & 4 colors = Z
+                エッジが隣接色かつ4色 = Z
                 <b-row>
-                  <b-col></b-col>
+                  <b-col><div id="pll_DoubleLights1"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
@@ -98,9 +111,9 @@
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/Double_lights_3.png" :width="iwidth" :height="iheight"><br>
-                opp edges = H
+                エッジが対面色 = H
                 <b-row>
-                  <b-col></b-col>
+                  <b-col><div id="pll_DoubleLights2"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
@@ -108,9 +121,9 @@
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/Double_lights_4.png" :width="iwidth" :height="iheight"><br>
-                2:1 pattern & 3 colors = U
+                2:1になっているかつ3色 = U
                 <b-row>
-                  <b-col></b-col>
+                  <b-col><div id="pll_DoubleLights3"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
@@ -133,33 +146,33 @@
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Lights_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
-              inside bar & 3 colors = T
+              2-BARが内側かつ3色 = T
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR0"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lights_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
-              inside bar & 4 colors = R
+              2-BARが内側かつ4色 = R
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lights_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
-              outer bar & 3 colors = A
+              2-BARが外側かつ3色 = A
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR2"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lights_2-BAR_4.png" :width="iwidth" :height="iheight"><br>
-              outer bar & 4 color = Ga/c
+              2-BARが外側かつ4色 = Ga/c
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
@@ -470,6 +483,30 @@ export default {
       "U0U2,U2U0,U1U3-s8,U3U1-s8",
       "U0U2,U2U0,U1U5-s8,U5U1-s8",
       "U0U2,U2U0,U3U5,U5U3"
+    ],
+    pll_DoubleLights:[
+      "y M' U M'2 U M'2 U M' U2 M'2",
+      "y2 M' U M'2 U M'2 U M' U2 M'2 U'",
+      "y2 M'2 U M'2 U2 M'2 U M2",
+      "y2 R U' R U R U R U' R' U' R2"
+    ],
+    pll_DoubleLights_arrow:[
+      "U1U3,U3U1,U5U7,U7U5",
+      "U1U5,U5U1,U3U7,U7U3",
+      "U1U7,U7U1,U3U5,U5U3",
+      "U3U5-s8,U5U7-s8,U7U3-s8",
+    ],
+    pll_Lights_2BAR:[
+      "y' R U R' U' R' F R2 U' R' U' R U R' F' y'",
+      "y' R U' R' U' R U R D R' U' R D' R' U'2 R' U' y'",
+      "y2 x' R U' R D2 R' U R D2 R2 x y",
+      "y' D R' U' R U D' R2 U R' U R U' R U' R2' U'",
+    ],
+    pll_Lights_2BAR_arrow:[
+      "U0U2,U2U0,U1U7-s8,U7U1-s8",
+      "U0U2,U2U0,U3U7,U7U3",
+      "U0U8-s8,U8U6-s8,U6U0-s8",
+      "U0U8-s8,U8U6-s8,U6U0-s8,U1U3-s6,U3U7-s6,U7U1-s6",
     ]
   }),
   mounted() {
@@ -481,6 +518,16 @@ export default {
       parameter.algorithm = this.pll_3BAR[key]
       parameter.arrows = this.pll_3BAR_arrow[key]
       SRVisualizer.cubePNG(document.getElementById('pll_3BAR' + key), parameter)
+    }
+    for(let key in this.pll_DoubleLights){
+      parameter.algorithm = this.pll_DoubleLights[key]
+      parameter.arrows = this.pll_DoubleLights_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('pll_DoubleLights' + key), parameter)
+    }
+    for(let key in this.pll_Lights_2BAR){
+      parameter.algorithm = this.pll_Lights_2BAR[key]
+      parameter.arrows = this.pll_Lights_2BAR_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('pll_Lights_2BAR' + key), parameter)
     }
   },
 }
