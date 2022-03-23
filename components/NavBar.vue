@@ -23,6 +23,7 @@
             <b-dropdown-item to="/pll/pll-view">PLL一覧</b-dropdown-item>
             <b-dropdown-item to="/pll/pll-chances">PLLの確率</b-dropdown-item>
             <b-dropdown-item to="/pll/pll">PLL手順</b-dropdown-item>
+            <b-dropdown-item to="/pll/two-sided-pll">2側面判断</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="BLD" left>
