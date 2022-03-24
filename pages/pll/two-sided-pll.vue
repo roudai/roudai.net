@@ -27,7 +27,7 @@
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-1 variant="outline-primary">
-            3-BAR<br>（左に3-BAR）<br>
+            3-BAR<br>
             <img src="~/assets/images/two-sided/3-BAR.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
@@ -40,16 +40,16 @@
                 <b-row>
                   <b-col><div id="pll_3BAR0"></div></b-col>
                   <b-col><div id="pll_3BAR1"></div></b-col>
-                  <b-col></b-col>
-                  <b-col></b-col>
+                  <b-col><div id="pll_3BAR2"></div></b-col>
+                  <b-col><div id="pll_3BAR3"></div></b-col>
                 </b-row>
               </div>
               <div class="p-1">
                 <img src="~/assets/images/two-sided/3-BAR_2.png" :width="iwidth" :height="iheight"><br>
                 もう一面が2-bar = J
                 <b-row>
-                  <b-col><div id="pll_3BAR2"></div></b-col>
-                  <b-col></b-col>
+                  <b-col><div id="pll_3BAR4"></div></b-col>
+                  <b-col><div id="pll_3BAR5"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                 </b-row>
@@ -58,8 +58,8 @@
                 <img src="~/assets/images/two-sided/3-BAR_3.png" :width="iwidth" :height="iheight"><br>
                 もう一面が2-bar = J
                 <b-row>
-                  <b-col><div id="pll_3BAR3"></div></b-col>
-                  <b-col></b-col>
+                  <b-col><div id="pll_3BAR6"></div></b-col>
+                  <b-col><div id="pll_3BAR7"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                 </b-row>
@@ -68,8 +68,8 @@
                 <img src="~/assets/images/two-sided/3-BAR_4.png" :width="iwidth" :height="iheight"><br>
                 4色 = F
                 <b-row>
-                  <b-col><div id="pll_3BAR4"></div></b-col>
-                  <b-col></b-col>
+                  <b-col><div id="pll_3BAR8"></div></b-col>
+                  <b-col><div id="pll_3BAR9"></div></b-col>
                   <b-col></b-col>
                   <b-col></b-col>
                 </b-row>
@@ -185,7 +185,7 @@
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-4 variant="outline-primary">
-            LONE LIGHTS<br>（左にLIGHTSのみ）<br>
+            LONE LIGHTS<br>（LIGHTSひとつ）<br>
             <img src="~/assets/images/two-sided/Lone_lights.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
@@ -195,7 +195,7 @@
               <img src="~/assets/images/two-sided/Lone_lights_1.png" :width="iwidth" :height="iheight"><br>
               5-checker = R
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="PLL_Lone_Lights0"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
@@ -203,8 +203,8 @@
               <img src="~/assets/images/two-sided/Lone_lights_2.png" :width="iwidth" :height="iheight"><br>
               4-checker = Ga/c
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Lone_Lights1"></div></b-col>
+                <b-col><div id="PLL_Lone_Lights2"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -473,16 +473,26 @@ export default {
     pll_3BAR:[
       "R2 U R U R' U' R' U' R' U R' y2",
       "R U' R U R U R U' R' U' R2 y2",
+      "R2 U R U R' U' R' U' R' U R' y",
+      "R U' R U R U R U' R' U' R2 y",
       "y2 R' U L' U2 R U' R' U2 L R U'",
+      "y' R U R' F' R U R' U' R' F R2 U' R' U' y2",
       "y' R U R' F' R U R' U' R' F R2 U' R' U' y'",
+      "y2 R' U L' U2 R U' R' U2 L R U' y'",
       "y' R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R y'",
+      "y' R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R y2",
     ],
     pll_3BAR_arrow:[
       "U1U3-s8,U3U5-s8,U5U1-s8",
       "U3U1-s8,U5U3-s8,U1U5-s8",
+      "U1U3-s8,U3U7-s8,U7U1-s8",
+      "U3U1-s8,U7U3-s8,U7U1-s8",
       "U0U2,U2U0,U1U3-s8,U3U1-s8",
+      "U0U6,U6U0,U1U3-s8,U3U1-s8",
       "U0U2,U2U0,U1U5-s8,U5U1-s8",
-      "U0U2,U2U0,U3U5,U5U3"
+      "U0U6,U6U0,U3U7-s8,U7U3-s8",
+      "U0U2,U2U0,U3U5,U5U3",
+      "U0U6,U6U0,U1U7,U7U1"
     ],
     pll_DoubleLights:[
       "y M' U M'2 U M'2 U M' U2 M'2",
@@ -507,6 +517,18 @@ export default {
       "U0U2,U2U0,U3U7,U7U3",
       "U0U8-s8,U8U6-s8,U6U0-s8",
       "U0U8-s8,U8U6-s8,U6U0-s8,U1U3-s6,U3U7-s6,U7U1-s6",
+    ],
+    PLL_Lone_Lights:[
+      "y2 R' U2 R U'2 R' F R U R' U' R' F' R2 U'",
+      "y' D' R U R' U' D R2 U' R U' R' U R' U R2 U y2",
+      "D R' U' R U D' R2 U R' U R U' R U' R2' U' y'",
+      "",
+    ],
+    PLL_Lone_Lights_arrow:[
+      "",
+      "",
+      "",
+      "",
     ]
   }),
   mounted() {
@@ -528,6 +550,11 @@ export default {
       parameter.algorithm = this.pll_Lights_2BAR[key]
       parameter.arrows = this.pll_Lights_2BAR_arrow[key]
       SRVisualizer.cubePNG(document.getElementById('pll_Lights_2BAR' + key), parameter)
+    }
+    for(let key in this.PLL_Lone_Lights){
+      parameter.algorithm = this.PLL_Lone_Lights[key]
+      parameter.arrows = this.PLL_Lone_Lights_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('PLL_Lone_Lights' + key), parameter)
     }
   },
 }
