@@ -124,9 +124,9 @@
                 2:1になっているかつ3色 = U
                 <b-row>
                   <b-col><div id="pll_DoubleLights3"></div></b-col>
-                  <b-col></b-col>
-                  <b-col></b-col>
-                  <b-col></b-col>
+                  <b-col><div id="pll_DoubleLights4"></div></b-col>
+                  <b-col><div id="pll_DoubleLights5"></div></b-col>
+                  <b-col><div id="pll_DoubleLights6"></div></b-col>
                 </b-row>
               </div>
             </b-card-text>
@@ -498,13 +498,19 @@ export default {
       "y M' U M'2 U M'2 U M' U2 M'2",
       "y2 M' U M'2 U M'2 U M' U2 M'2 U'",
       "y2 M'2 U M'2 U2 M'2 U M2",
-      "y2 R U' R U R U R U' R' U' R2"
+      "y2 R U' R U R U R U' R' U' R2",
+      "y2 R2 U R U R' U' R' U' R' U R'",
+      "y2 R U' R U R U R U' R' U' R2 y'",
+      "y2 R2 U R U R' U' R' U' R' U R' y'",
     ],
     pll_DoubleLights_arrow:[
       "U1U3,U3U1,U5U7,U7U5",
       "U1U5,U5U1,U3U7,U7U3",
       "U1U7,U7U1,U3U5,U5U3",
       "U3U5-s8,U5U7-s8,U7U3-s8",
+      "U5U3-s8,U7U5-s8,U3U7-s8",
+      "U1U5-s8,U5U7-s8,U7U1,s8",
+      "U5U1-s8,U7U5-s8,U1U7-s8",
     ],
     pll_Lights_2BAR:[
       "y' R U R' U' R' F R2 U' R' U' R U R' F' y'",
