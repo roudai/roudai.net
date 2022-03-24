@@ -149,31 +149,31 @@
               2-BARが内側かつ3色 = T
               <b-row>
                 <b-col><div id="pll_Lights_2BAR0"></div></b-col>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lights_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
               2-BARが内側かつ4色 = R
               <b-row>
-                <b-col><div id="pll_Lights_2BAR1"></div></b-col>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR2"></div></b-col>
+                <b-col><div id="pll_Lights_2BAR3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lights_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
               2-BARが外側かつ3色 = A
               <b-row>
-                <b-col><div id="pll_Lights_2BAR2"></div></b-col>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR4"></div></b-col>
+                <b-col><div id="pll_Lights_2BAR5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lights_2-BAR_4.png" :width="iwidth" :height="iheight"><br>
               2-BARが外側かつ4色 = Ga/c
               <b-row>
-                <b-col><div id="pll_Lights_2BAR3"></div></b-col>
-                <b-col></b-col>
+                <b-col><div id="pll_Lights_2BAR6"></div></b-col>
+                <b-col><div id="pll_Lights_2BAR7"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -514,15 +514,23 @@ export default {
     ],
     pll_Lights_2BAR:[
       "y' R U R' U' R' F R2 U' R' U' R U R' F' y'",
+      "y' R U R' U' R' F R2 U' R' U' R U R' F' y2",
       "y' R U' R' U' R U R D R' U' R D' R' U'2 R' U' y'",
+      "y2 R' U2 R U'2 R' F R U R' U' R' F' R2 U' y'",
       "y2 x' R U' R D2 R' U R D2 R2 x y",
+      "y x' R2 D2 R' U' R D2 R' U R' x y'",
       "y' D R' U' R U D' R2 U R' U R U' R U' R2' U'",
+      "y' D' R U R' U' D R2 U' R U' R' U R' U R2 U y",
     ],
     pll_Lights_2BAR_arrow:[
       "U0U2,U2U0,U1U7-s8,U7U1-s8",
+      "U0U6,U6U0,U3U5-8,U5U3-8",
       "U0U2,U2U0,U3U7,U7U3",
+      "U0U6,U6U0,U1U5,U5U1",
       "U0U8-s8,U8U6-s8,U6U0-s8",
+      "U0U8-s8,U8U2-s8,U2U0-s8",
       "U0U8-s8,U8U6-s8,U6U0-s8,U1U3-s6,U3U7-s6,U7U1-s6",
+      "U0U8-s8,U8U2-s8,U2U0-s8,U1U5-s6,U5U3-s6,U3U1-s6",
     ],
     PLL_Lone_Lights:[
       "y2 R' U2 R U'2 R' F R U R' U' R' F' R2 U'",
