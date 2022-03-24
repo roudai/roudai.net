@@ -185,7 +185,7 @@
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-4 variant="outline-primary">
-            LONE LIGHTS<br>（LIGHTSひとつ）<br>
+            LONE LIGHTS<br>（LIGHTSがひとつ）<br>
             <img src="~/assets/images/two-sided/Lone_lights.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
@@ -196,31 +196,31 @@
               5-checker = R
               <b-row>
                 <b-col><div id="PLL_Lone_Lights0"></div></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Lone_Lights1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lone_lights_2.png" :width="iwidth" :height="iheight"><br>
               4-checker = Ga/c
               <b-row>
-                <b-col><div id="PLL_Lone_Lights1"></div></b-col>
                 <b-col><div id="PLL_Lone_Lights2"></div></b-col>
+                <b-col><div id="PLL_Lone_Lights3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lone_lights_3.png" :width="iwidth" :height="iheight"><br>
               lights enclose opp = Gb/d
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Lone_Lights4"></div></b-col>
+                <b-col><div id="PLL_Lone_Lights5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lone_lights_4.png" :width="iwidth" :height="iheight"><br>
               lights enclose adj (but no checker) = A
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Lone_Lights6"></div></b-col>
+                <b-col><div id="PLL_Lone_Lights7"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -534,15 +534,23 @@ export default {
     ],
     PLL_Lone_Lights:[
       "y2 R' U2 R U'2 R' F R U R' U' R' F' R2 U'",
+      "y' R U' R' U' R U R D R' U' R D' R' U'2 R' U' y2",
       "y' D' R U R' U' D R2 U' R U' R' U R' U R2 U y2",
-      "D R' U' R U D' R2 U R' U R U' R U' R2' U' y'",
-      "",
+      "y' D R' U' R U D' R2 U R' U R U' R U' R2' U' y'",
+      "U' R2 U' R U' R U R' U R2 D' U R U' R' D y'",
+      "y2 U R2 U R' U R' U'R U' R2 D U' R' U R D' y2",
+      "y x' R2 D2 R' U' R D2 R' U R' x",
+      "y2 x' R U' R D2 R' U R D2 R2 x",
     ],
     PLL_Lone_Lights_arrow:[
-      "",
-      "",
-      "",
-      "",
+      "U0U2,U2U0,U5U7,U7U5",
+      "U0U6,U6U0,U5U7,U7U5",
+      "U2U6-s8,U6U8-s8,U8U2-s8,U1U5-s6,U5U7-s6,U7U1-s6",
+      "U2U8-s8,U8U6-s8,U6U2-s8,U3U7-s6,U6U5-s6,U5U3-s6",
+      "U0U8-s8,U8U6-s8,U6U0-s8,U3U7-s6,U7U5-s6,U5U3-s6",
+      "U0U8-s8,U8U2-s8,U2U0-s8,U1U5-s6,U5U7-s6,U7U1-s6",
+      "U2U6-s8,U6U8-s8,U8U2-s8",
+      "U2U8-s8,U8U6-s8,U6U2-s8",
     ]
   }),
   mounted() {
