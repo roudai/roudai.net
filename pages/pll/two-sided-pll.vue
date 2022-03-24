@@ -237,13 +237,13 @@
             <img src="~/assets/images/two-sided/Double_2-BAR_B.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
-        <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
+        <b-collapse visible id="accordion-5" accordion="my-accordion" role="tabpanel">
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Double_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
               both outside = Y
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="PLL_Double_2BAR0"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
@@ -251,15 +251,15 @@
               <img src="~/assets/images/two-sided/Double_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
               both inside & bookends = A
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Double_2BAR1"></div></b-col>
+                <b-col><div id="PLL_Double_2BAR2"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Double_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
               inside & no bookends = V
               <b-row>
-                <b-col></b-col>
+                <b-col><div id="PLL_Double_2BAR3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
@@ -267,16 +267,16 @@
               <img src="~/assets/images/two-sided/Double_2-BAR_4.png" :width="iwidth" :height="iheight"><br>
               same side & bookend = J
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Double_2BAR4"></div></b-col>
+                <b-col><div id="PLL_Double_2BAR5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Double_2-BAR_5.png" :width="iwidth" :height="iheight"><br>
               same side & no bookend = N
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Double_2BAR6"></div></b-col>
+                <b-col><div id="PLL_Double_2BAR7"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -551,6 +551,26 @@ export default {
       "U0U8-s8,U8U2-s8,U2U0-s8,U1U5-s6,U5U7-s6,U7U1-s6",
       "U2U6-s8,U6U8-s8,U8U2-s8",
       "U2U8-s8,U8U6-s8,U6U2-s8",
+    ],
+    PLL_Double_2BAR:[
+      "y2 F R U' R' U' R U R' F' R U R' U' R' F R F'",
+      "x' R U' R D2 R' U R D2 R2 x y2",
+      "x' R2 D2 R' U' R D2 R' U R' x y2",
+      "y' R' U R U' R' Fw' U' R U2 R' U' R U' R' Fw R y'",
+      "y' R' U L' U2 R U' R' U2 L R U' y2",
+      "y2 R U R' F' R U R' U' R' F R2 U' R' U'",
+      "y2 R' U R U' R' F' U' F R U R' F R' F' R U' R",
+      "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R' y",
+    ],
+    PLL_Double_2BAR_arrow:[
+      "U0U8,U8U0,U1U3,U3U1",
+      "U0U2-s8,U2U6-s8,U6U0-s8",
+      "U2U0-s8,U6U2-s8,U0U6-s8",
+      "U1U3,U3U1,U2U6,U6U2",
+      "U6U8,U8U6,U5U7-s8,U7U5-s8",
+      "U2U8,U8U2,U5U7-s8,U7U5-s8",
+      "U0U8,U8U0,U3U5,U5U3",
+      "U0U8,U8U0,U1U7,U7U1",
     ]
   }),
   mounted() {
@@ -577,6 +597,11 @@ export default {
       parameter.algorithm = this.PLL_Lone_Lights[key]
       parameter.arrows = this.PLL_Lone_Lights_arrow[key]
       SRVisualizer.cubePNG(document.getElementById('PLL_Lone_Lights' + key), parameter)
+    }
+    for(let key in this.PLL_Double_2BAR){
+      parameter.algorithm = this.PLL_Double_2BAR[key]
+      parameter.arrows = this.PLL_Double_2BAR_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('PLL_Double_2BAR' + key), parameter)
     }
   },
 }
