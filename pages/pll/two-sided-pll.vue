@@ -83,14 +83,14 @@
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-2 variant="outline-primary">
             DOUBLE LIGHTS<br>（LIGHTSが2つ）<br>
-            <img src="~/assets/images/two-sided/Double_lights.png" :width="iwidth" :height="iheight"
+            <img src="~/assets/images/two-sided/Double_Lights.png" :width="iwidth" :height="iheight"
           ></b-button>
         </b-card-header>
         <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
           <b-card-body>
             <b-card-text>
               <div class="p-1">
-                <img src="~/assets/images/two-sided/Double_lights_1.png" :width="iwidth" :height="iheight"><br>
+                <img src="~/assets/images/two-sided/Double_Lights_1.png" :width="iwidth" :height="iheight"><br>
                 2色6チェッカー = Z
                 <b-row>
                   <b-col><div id="pll_DoubleLights0"></div></b-col>
@@ -100,7 +100,7 @@
                 </b-row>
               </div>
               <div class="p-1">
-                <img src="~/assets/images/two-sided/Double_lights_2.png" :width="iwidth" :height="iheight"><br>
+                <img src="~/assets/images/two-sided/Double_Lights_2.png" :width="iwidth" :height="iheight"><br>
                 エッジが隣接色かつ4色 = Z
                 <b-row>
                   <b-col><div id="pll_DoubleLights1"></div></b-col>
@@ -110,7 +110,7 @@
                 </b-row>
               </div>
               <div class="p-1">
-                <img src="~/assets/images/two-sided/Double_lights_3.png" :width="iwidth" :height="iheight"><br>
+                <img src="~/assets/images/two-sided/Double_Lights_3.png" :width="iwidth" :height="iheight"><br>
                 エッジが対面色 = H
                 <b-row>
                   <b-col><div id="pll_DoubleLights2"></div></b-col>
@@ -120,7 +120,7 @@
                 </b-row>
               </div>
               <div class="p-1">
-                <img src="~/assets/images/two-sided/Double_lights_4.png" :width="iwidth" :height="iheight"><br>
+                <img src="~/assets/images/two-sided/Double_Lights_4.png" :width="iwidth" :height="iheight"><br>
                 2:1になっているかつ3色 = U
                 <b-row>
                   <b-col><div id="pll_DoubleLights3"></div></b-col>
