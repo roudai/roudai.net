@@ -425,30 +425,30 @@
             <img src="~/assets/images/two-sided/No_bookends.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
-        <b-collapse id="accordion-9" accordion="my-accordion" role="tabpanel">
+        <b-collapse visible id="accordion-9" accordion="my-accordion" role="tabpanel">
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/No_bookends_1.png" :width="iwidth" :height="iheight"><br>
               inner 4-checker = V
               <b-row>
                 <b-col><div id="PLL_No_Bookends0"></div></b-col>
-                <b-col><div id="PLL_No_Bookends1"></div></b-col>
+                <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/No_bookends_2.png" :width="iwidth" :height="iheight"><br>
               outer 4-checker = Y
               <b-row>
-                <b-col><div id="PLL_No_Bookends2"></div></b-col>
-                <b-col><div id="PLL_No_Bookends3"></div></b-col>
+                <b-col><div id="PLL_No_Bookends1"></div></b-col>
+                <b-col></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/No_bookends_3.png" :width="iwidth" :height="iheight"><br>
               5-checker w/ opp middle = E
               <b-row>
-                <b-col><div id="PLL_No_Bookends4"></div></b-col>
-                <b-col><div id="PLL_No_Bookends5"></div></b-col>
+                <b-col><div id="PLL_No_Bookends2"></div></b-col>
+                <b-col><div id="PLL_No_Bookends3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -629,20 +629,16 @@ export default {
       "U0U2-s8,U2U8-s8,U8U0-s8,U1U7-s6,U7U5-s6,U5U1-s6",
     ],
     PLL_No_Bookends:[
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
+      "y' R' U R U' R' Fw' U' R U2 R' U' R U' R' Fw R y",
+      "F R U' R' U' R U R' F' R U R' U' R' F R F' y2",
+      "y' x' R U' R' D R U R' D' R U R' D R U' R' D' x",
+      "y' x' R U' R' D R U R' D' R U R' D R U' R' D' x  y2",
     ],
     PLL_No_Bookends_arrow:[
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
+      "U2U6,U6U2,U5U7,U7U5",
+      "U0U8,U8U0,U5U7,U7U5",
+      "U0U6,U6U0,U2U8,U8U2",
+      "U0U6,U6U0,U2U8,U8U2",
     ],
   }),
   mounted() {
