@@ -58,7 +58,7 @@ export default {
       compact: false
     },
     extend (config) {
-      config.performance.maxAssetSize = 700 * 1024
+      config.performance.maxAssetSize = 800 * 1024
     },
     transpile: ['sr-puzzlegen'],
   },
