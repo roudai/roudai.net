@@ -109,12 +109,12 @@ export default {
       "両手：R'2 F2 R U2 R U2 R' F R U R' U' R' F R2",
      ],
      "18": [
-      "両手：U R2 U R' U R' U'R U' R2 D U' R' U R D'",
+      "両手：U R2 U R' U R' U' R U' R2 D U' R' U R D'",
       "両手、最少：R2 Uw R' U R' U' R U'w R'2 F' U F（12手）",
       "片手：	z U'2 Rw U' R U' R' U Rw' U'2 x' U' R U",
      ],
      "19": [
-      "両手：D R' U' R U D' R2 U R' U R U' R U' R2′ U'",
+      "両手：D R' U' R U D' R2 U R' U R U' R U' R2' U'",
       "両手、最少：L' U' L y' R2 Uw R' U R U' R Uw' R'2（12手）",
       "両手、片手：R' U' R y R2 Uw R' U R U' R Uw' R'2",
      ],
