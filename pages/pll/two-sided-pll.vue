@@ -137,7 +137,7 @@
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-3 variant="outline-primary">
-            LIGHTS + 2-BAR<br>（左にLIGHTS、右に2-BAR）<br>
+            LIGHTS + 2-BAR<br>
             <img src="~/assets/images/two-sided/Lights_2-BAR_A.png" :width="iwidth" :height="iheight"><br>
             <img src="~/assets/images/two-sided/Lights_2-BAR_B.png" :width="iwidth" :height="iheight">
           </b-button>
@@ -237,7 +237,7 @@
             <img src="~/assets/images/two-sided/Double_2-BAR_B.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
-        <b-collapse visible id="accordion-5" accordion="my-accordion" role="tabpanel">
+        <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Double_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
@@ -288,7 +288,7 @@
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-6 variant="outline-primary">
-            OUTSIDE 2-BAR<br>（左外側に2-BAR）<br>
+            OUTSIDE 2-BAR<br>（外側に2-BAR）<br>
             <img src="~/assets/images/two-sided/Outside_2-BAR.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
@@ -298,40 +298,40 @@
               <img src="~/assets/images/two-sided/Outside_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
               no bookend = V
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Outside_2BAR0"></div></b-col>
+                <b-col><div id="PLL_Outside_2BAR1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
               adj appears twice = R
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Outside_2BAR2"></div></b-col>
+                <b-col><div id="PLL_Outside_2BAR3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
               opp appears twice = Gb/d
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Outside_2BAR4"></div></b-col>
+                <b-col><div id="PLL_Outside_2BAR5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_4.png" :width="iwidth" :height="iheight"><br>
               adj by bar & 4 colors = T
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Outside_2BAR6"></div></b-col>
+                <b-col><div id="PLL_Outside_2BAR7"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_5.png" :width="iwidth" :height="iheight"><br>
               opp by bar & 4 colors = A
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Outside_2BAR8"></div></b-col>
+                <b-col><div id="PLL_Outside_2BAR9"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -343,7 +343,7 @@
       <b-card no-body class="mb-1">
         <b-card-header header-tag="header" class="p-1" role="tab">
           <b-button block v-b-toggle.accordion-7 variant="outline-primary">
-            INSIDE 2-BAR<br>（左内側に2-BAR）<br>
+            INSIDE 2-BAR<br>（内側に2-BAR）<br>
             <img src="~/assets/images/two-sided/Inside_2-BAR.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
@@ -571,6 +571,30 @@ export default {
       "U2U8,U8U2,U5U7-s8,U7U5-s8",
       "U0U8,U8U0,U3U5,U5U3",
       "U0U8,U8U0,U1U7,U7U1",
+    ],
+    PLL_Outside_2BAR:[
+      "y2 R' U R U' R' Fw' U' R U2 R' U' R U' R' Fw R",
+      "y' R' U R U' R' Fw' U' R U2 R' U' R U' R' Fw R y2",
+      "y2 R U' R' U' R U R D R' U' R D' R' U'2 R' U'",
+      "y' R' U2 R U'2 R' F R U R' U' R' F' R2 U' y2",
+      "y U' R2 U' R U' R U R' U R2 D' U R U' R' D y",
+      "y U R2 U R' U R' U'R U' R2 D U' R' U R D'",
+      "y2 R U R' U' R' F R2 U' R' U' R U R' F'",
+      "R U R' U' R' F R2 U' R' U' R U R' F' y",
+      "y' x' R U' R D2 R' U R D2 R2 x y'",
+      "x' R2 D2 R' U' R D2 R' U R' x y",
+    ],
+    PLL_Outside_2BAR_arrow:[
+      "U0U8,U8U0,U1U5,U5U1",
+      "U0U8,U8U0,U3U7,U7U3",
+      "U1U3,U3U1,U2U8,U8U2",
+      "U1U3,U3U1,U6U8,U8U6",
+      "U0U2-s8,U2U8-s8,U8U0-s8,U1U3-s6,U3U5-s6,U5U1-s6",
+      "U0U6-s8,U6U8-s8,U8U0-s8,U1U7-s6,U7U3-s6,U3U1-s6",
+      "U2U8,U8U2,U3U5-s8,U5U3-s8",
+      "U6U8,U8U6,U1U7-s8,U7U1-s8",
+      "U0U2-s8,U2U8-s8,U8U0-s8",
+      "U0U6-s8,U6U8-s8,U8U0-s8",
     ]
   }),
   mounted() {
@@ -602,6 +626,11 @@ export default {
       parameter.algorithm = this.PLL_Double_2BAR[key]
       parameter.arrows = this.PLL_Double_2BAR_arrow[key]
       SRVisualizer.cubePNG(document.getElementById('PLL_Double_2BAR' + key), parameter)
+    }
+    for(let key in this.PLL_Outside_2BAR){
+      parameter.algorithm = this.PLL_Outside_2BAR[key]
+      parameter.arrows = this.PLL_Outside_2BAR_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('PLL_Outside_2BAR' + key), parameter)
     }
   },
 }
