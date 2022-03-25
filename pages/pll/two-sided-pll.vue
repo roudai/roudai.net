@@ -193,7 +193,7 @@
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Lone_lights_1.png" :width="iwidth" :height="iheight"><br>
-              5-checker = R
+              5つのチェック柄 = R
               <b-row>
                 <b-col><div id="PLL_Lone_Lights0"></div></b-col>
                 <b-col><div id="PLL_Lone_Lights1"></div></b-col>
@@ -201,7 +201,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lone_lights_2.png" :width="iwidth" :height="iheight"><br>
-              4-checker = Ga/c
+              4つのチェック柄 = Ga/c
               <b-row>
                 <b-col><div id="PLL_Lone_Lights2"></div></b-col>
                 <b-col><div id="PLL_Lone_Lights3"></div></b-col>
@@ -209,7 +209,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lone_lights_3.png" :width="iwidth" :height="iheight"><br>
-              lights enclose opp = Gb/d
+              lightsの間に対面色 = Gb/d
               <b-row>
                 <b-col><div id="PLL_Lone_Lights4"></div></b-col>
                 <b-col><div id="PLL_Lone_Lights5"></div></b-col>
@@ -217,7 +217,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Lone_lights_4.png" :width="iwidth" :height="iheight"><br>
-              lights enclose adj (but no checker) = A
+              lightsの間に隣接色かつチェック柄なし = A
               <b-row>
                 <b-col><div id="PLL_Lone_Lights6"></div></b-col>
                 <b-col><div id="PLL_Lone_Lights7"></div></b-col>
@@ -241,7 +241,7 @@
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Double_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
-              both outside = Y
+              2-BARがどちらも外側 = Y
               <b-row>
                 <b-col><div id="PLL_Double_2BAR0"></div></b-col>
                 <b-col></b-col>
@@ -249,7 +249,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Double_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
-              both inside & bookends = A
+              2-BARがどちらも内側かつbookend = A
               <b-row>
                 <b-col><div id="PLL_Double_2BAR1"></div></b-col>
                 <b-col><div id="PLL_Double_2BAR2"></div></b-col>
@@ -257,7 +257,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Double_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
-              inside & no bookends = V
+              2-BARがどちらも内側かつbookendなし = V
               <b-row>
                 <b-col><div id="PLL_Double_2BAR3"></div></b-col>
                 <b-col></b-col>
@@ -265,7 +265,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Double_2-BAR_4.png" :width="iwidth" :height="iheight"><br>
-              same side & bookend = J
+              2-BARが同じ側に寄っているかつbookend = J
               <b-row>
                 <b-col><div id="PLL_Double_2BAR4"></div></b-col>
                 <b-col><div id="PLL_Double_2BAR5"></div></b-col>
@@ -273,7 +273,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Double_2-BAR_5.png" :width="iwidth" :height="iheight"><br>
-              same side & no bookend = N
+              2-BARが同じ側に寄っているかつbookendなし = N
               <b-row>
                 <b-col><div id="PLL_Double_2BAR6"></div></b-col>
                 <b-col><div id="PLL_Double_2BAR7"></div></b-col>
@@ -296,7 +296,7 @@
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Outside_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
-              no bookend = V
+              bookendなし = V
               <b-row>
                 <b-col><div id="PLL_Outside_2BAR0"></div></b-col>
                 <b-col><div id="PLL_Outside_2BAR1"></div></b-col>
@@ -304,7 +304,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
-              adj appears twice = R
+              隣接色が2つ = R
               <b-row>
                 <b-col><div id="PLL_Outside_2BAR2"></div></b-col>
                 <b-col><div id="PLL_Outside_2BAR3"></div></b-col>
@@ -312,7 +312,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
-              opp appears twice = Gb/d
+              対面色が2つ = Gb/d
               <b-row>
                 <b-col><div id="PLL_Outside_2BAR4"></div></b-col>
                 <b-col><div id="PLL_Outside_2BAR5"></div></b-col>
@@ -320,7 +320,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_4.png" :width="iwidth" :height="iheight"><br>
-              adj by bar & 4 colors = T
+              2-BARの隣が隣接色かつ4色 = T
               <b-row>
                 <b-col><div id="PLL_Outside_2BAR6"></div></b-col>
                 <b-col><div id="PLL_Outside_2BAR7"></div></b-col>
@@ -328,7 +328,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Outside_2-BAR_5.png" :width="iwidth" :height="iheight"><br>
-              opp by bar & 4 colors = A
+              2-BARの隣が対面色かつ4色 = A
               <b-row>
                 <b-col><div id="PLL_Outside_2BAR8"></div></b-col>
                 <b-col><div id="PLL_Outside_2BAR9"></div></b-col>
@@ -351,7 +351,7 @@
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Inside_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
-              bookends adj color = Ga/c
+              隣接色でbookend = Ga/c
               <b-row>
                 <b-col><div id="PLL_Inside_2BAR0"></div></b-col>
                 <b-col><div id="PLL_Inside_2BAR1"></div></b-col>
@@ -359,7 +359,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Inside_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
-              bookends opp col = Gb/d
+              対面色でbookend = Gb/d
               <b-row>
                 <b-col><div id="PLL_Inside_2BAR2"></div></b-col>
                 <b-col><div id="PLL_Inside_2BAR3"></div></b-col>
@@ -367,7 +367,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Inside_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
-              no bookends = Y
+              bookendなし = Y
               <b-row>
                 <b-col><div id="PLL_Inside_2BAR4"></div></b-col>
                 <b-col><div id="PLL_Inside_2BAR5"></div></b-col>
@@ -390,7 +390,7 @@
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/Bookends_NoBAR_1.png" :width="iwidth" :height="iheight"><br>
-              enclosed 4-checker = F
+              中間4つがチェック柄 = F
               <b-row>
                 <b-col><div id="PLL_Bookends_NoBAR0"></div></b-col>
                 <b-col><div id="PLL_Bookends_NoBAR1"></div></b-col>
@@ -398,7 +398,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Bookends_NoBAR_2.png" :width="iwidth" :height="iheight"><br>
-              adj appears twice = R
+              隣接色が2つ = R
               <b-row>
                 <b-col><div id="PLL_Bookends_NoBAR2"></div></b-col>
                 <b-col><div id="PLL_Bookends_NoBAR3"></div></b-col>
@@ -406,7 +406,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Bookends_NoBAR_3.png" :width="iwidth" :height="iheight"><br>
-              opp appears twice = Ga/c
+              対面色が2つ = Ga/c
               <b-row>
                 <b-col><div id="PLL_Bookends_NoBAR4"></div></b-col>
                 <b-col><div id="PLL_Bookends_NoBAR5"></div></b-col>
@@ -425,11 +425,11 @@
             <img src="~/assets/images/two-sided/No_bookends.png" :width="iwidth" :height="iheight">
           </b-button>
         </b-card-header>
-        <b-collapse visible id="accordion-9" accordion="my-accordion" role="tabpanel">
+        <b-collapse id="accordion-9" accordion="my-accordion" role="tabpanel">
           <b-card-body>
             <b-card-text>
               <img src="~/assets/images/two-sided/No_bookends_1.png" :width="iwidth" :height="iheight"><br>
-              inner 4-checker = V
+              中間4つがチェック柄 = V
               <b-row>
                 <b-col><div id="PLL_No_Bookends0"></div></b-col>
                 <b-col></b-col>
@@ -437,7 +437,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/No_bookends_2.png" :width="iwidth" :height="iheight"><br>
-              outer 4-checker = Y
+              外側4つがチェック柄 = Y
               <b-row>
                 <b-col><div id="PLL_No_Bookends1"></div></b-col>
                 <b-col></b-col>
@@ -445,7 +445,7 @@
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/No_bookends_3.png" :width="iwidth" :height="iheight"><br>
-              5-checker w/ opp middle = E
+              5つで3色のチェック柄でその真ん中が対面色 = E
               <b-row>
                 <b-col><div id="PLL_No_Bookends2"></div></b-col>
                 <b-col><div id="PLL_No_Bookends3"></div></b-col>
@@ -631,14 +631,14 @@ export default {
     PLL_No_Bookends:[
       "y' R' U R U' R' Fw' U' R U2 R' U' R U' R' Fw R y",
       "F R U' R' U' R U R' F' R U R' U' R' F R F' y2",
-      "y' x' R U' R' D R U R' D' R U R' D R U' R' D' x",
-      "y' x' R U' R' D R U R' D' R U R' D R U' R' D' x  y2",
+      "y2 x' R U' R' D R U R' D' R U R' D R U' R' D' x y'",
+      "x' R U' R' D R U R' D' R U R' D R U' R' D' x y2",
     ],
     PLL_No_Bookends_arrow:[
       "U2U6,U6U2,U5U7,U7U5",
       "U0U8,U8U0,U5U7,U7U5",
-      "U0U6,U6U0,U2U8,U8U2",
-      "U0U6,U6U0,U2U8,U8U2",
+      "U0U2,U2U0,U6U8,U8U6",
+      "U0U6,U6U0,U2U8,U2U8",
     ],
   }),
   mounted() {
