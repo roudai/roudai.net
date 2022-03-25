@@ -353,24 +353,24 @@
               <img src="~/assets/images/two-sided/Inside_2-BAR_1.png" :width="iwidth" :height="iheight"><br>
               bookends adj color = Ga/c
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Inside_2BAR0"></div></b-col>
+                <b-col><div id="PLL_Inside_2BAR1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Inside_2-BAR_2.png" :width="iwidth" :height="iheight"><br>
               bookends opp col = Gb/d
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Inside_2BAR2"></div></b-col>
+                <b-col><div id="PLL_Inside_2BAR3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Inside_2-BAR_3.png" :width="iwidth" :height="iheight"><br>
               no bookends = Y
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Inside_2BAR4"></div></b-col>
+                <b-col><div id="PLL_Inside_2BAR5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -392,24 +392,24 @@
               <img src="~/assets/images/two-sided/Bookends_NoBAR_1.png" :width="iwidth" :height="iheight"><br>
               enclosed 4-checker = F
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Bookends_NoBAR0"></div></b-col>
+                <b-col><div id="PLL_Bookends_NoBAR1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Bookends_NoBAR_2.png" :width="iwidth" :height="iheight"><br>
               adj appears twice = R
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Bookends_NoBAR2"></div></b-col>
+                <b-col><div id="PLL_Bookends_NoBAR3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/Bookends_NoBAR_3.png" :width="iwidth" :height="iheight"><br>
               opp appears twice = Ga/c
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_Bookends_NoBAR4"></div></b-col>
+                <b-col><div id="PLL_Bookends_NoBAR5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -431,24 +431,24 @@
               <img src="~/assets/images/two-sided/No_bookends_1.png" :width="iwidth" :height="iheight"><br>
               inner 4-checker = V
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_No_Bookends0"></div></b-col>
+                <b-col><div id="PLL_No_Bookends1"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/No_bookends_2.png" :width="iwidth" :height="iheight"><br>
               outer 4-checker = Y
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_No_Bookends2"></div></b-col>
+                <b-col><div id="PLL_No_Bookends3"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
               <img src="~/assets/images/two-sided/No_bookends_3.png" :width="iwidth" :height="iheight"><br>
               5-checker w/ opp middle = E
               <b-row>
-                <b-col></b-col>
-                <b-col></b-col>
+                <b-col><div id="PLL_No_Bookends4"></div></b-col>
+                <b-col><div id="PLL_No_Bookends5"></div></b-col>
                 <b-col></b-col>
                 <b-col></b-col>
               </b-row>
@@ -595,7 +595,55 @@ export default {
       "U6U8,U8U6,U1U7-s8,U7U1-s8",
       "U0U2-s8,U2U8-s8,U8U0-s8",
       "U0U6-s8,U6U8-s8,U8U0-s8",
-    ]
+    ],
+    PLL_Inside_2BAR:[
+      "y D R' U' R U D' R2 U R' U R U' R U' R2' U' y",
+      "y D' R U R' U' D R2 U' R U' R' U R' U R2 U",
+      "y U R2 U R' U R' U'R U' R2 D U' R' U R D' y",
+      "y U' R2 U' R U' R U R' U R2 D' U R U' R' D",
+      "y F R U' R' U' R U R' F' R U R' U' R' F R F' y",
+      "y2 F R U' R' U' R U R' F' R U R' U' R' F R F' y'",
+    ],
+    PLL_Inside_2BAR_arrow:[
+      "U0U2-s8,U7U6-s8,U6U0-s8,U1U3-s6,U3U5-s6,U5U1-s6",
+      "U0U6,s8,U6U2-s8,U2U0-s8,U1U7-s6,U7U3-s6,U3U1-s6",
+      "U0U6-s8,U6U2-s8,U2U0-s8,U1U5-s6,U5U3-s6,U3U1-s6",
+      "U0U2-s8,U2U6-s8,U6U0-s8,U1U3-s6,U3U7-s6,U7U1-s6",
+      "U2U6,U6U2,U1U5,U5U1",
+      "U2U6,U6U2,U3U7,U7U3",
+    ],
+    PLL_Bookends_NoBAR:[
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+    PLL_Bookends_NoBAR_arrow:[
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+    PLL_No_Bookends:[
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+    PLL_No_Bookends_arrow:[
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
   }),
   mounted() {
     let parameter = {}
@@ -631,6 +679,21 @@ export default {
       parameter.algorithm = this.PLL_Outside_2BAR[key]
       parameter.arrows = this.PLL_Outside_2BAR_arrow[key]
       SRVisualizer.cubePNG(document.getElementById('PLL_Outside_2BAR' + key), parameter)
+    }
+    for(let key in this.PLL_Inside_2BAR){
+      parameter.algorithm = this.PLL_Inside_2BAR[key]
+      parameter.arrows = this.PLL_Inside_2BAR_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('PLL_Inside_2BAR' + key), parameter)
+    }
+    for(let key in this.PLL_Bookends_NoBAR){
+      parameter.algorithm = this.PLL_Bookends_NoBAR[key]
+      parameter.arrows = this.PLL_Bookends_NoBAR_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('PLL_Bookends_NoBAR' + key), parameter)
+    }
+    for(let key in this.PLL_No_Bookends){
+      parameter.algorithm = this.PLL_No_Bookends[key]
+      parameter.arrows = this.PLL_No_Bookends_arrow[key]
+      SRVisualizer.cubePNG(document.getElementById('PLL_No_Bookends' + key), parameter)
     }
   },
 }
