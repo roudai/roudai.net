@@ -51,6 +51,7 @@
           
           <b-nav-item-dropdown text="Tools" left>
             <b-dropdown-item href="https://visualcube.roudai.net">VisualCube Editor</b-dropdown-item>
+            <b-dropdown-item href="https://roudai.github.io/MegaminxImageEditor/">Megaminx Image Editor</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
 
