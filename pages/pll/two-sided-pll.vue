@@ -6,6 +6,9 @@
       を日本語化、加筆したものです。
     </p>
     <p>
+      判断基準で出現パターンを絞ることができる、<a href="https://roudai.github.io/PLLTrainer/">PLL Trainer</a>を開発しました。
+    </p>
+    <p>
       PLLの2側面判断は、下記の4つを判断基準とします。
     </p>
     <ol>
