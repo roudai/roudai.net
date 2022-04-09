@@ -41,6 +41,7 @@
 
           <b-nav-item-dropdown text="FMC" left>
             <b-dropdown-item to="/fmc/intro-fmc">最少手数競技の紹介</b-dropdown-item>
+            <b-dropdown-item to="/fmc/domino-reduction">Domino Reduction</b-dropdown-item>
           </b-nav-item-dropdown>
 
           <b-nav-item-dropdown text="Other" left>
