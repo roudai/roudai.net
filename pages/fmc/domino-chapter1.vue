@@ -7,7 +7,7 @@
       「4手以下でできる」「ペアやブロックがある」などが考えられますが、DRの場合、グッドEOとは次のようなものです。
     </p>
     <p>
-      『ほとんどのコーナー向きが合っていて（またはその1手前で）、いくつかのEエッジがE層に入っている。』
+      『コーナー向きができるだけ多く合っていて（またはその1手前で）、いくつかのEエッジがE層に入っている。』
     </p>
     <p>
       2つの簡単な例を見てみましょう。:
@@ -16,40 +16,78 @@
     <div>
       <b-card title="EOの例 その1">
         <b-card-text>
-          スクランブル：R' U' F D2 R2 B2 D2 R2 B' F' L2 U' F2 U2 L D U' F' L' D' R2 U R' U' F
+          スクランブル：{{ eo_example1 }}
         </b-card-text>
-        <b-card-text>U' F <span class="text-muted">// EO (F/B) (2/2)</span></b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              U' F <span class="text-muted">// EO (F/B) (2/2)</span>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="eo_example1"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
 
     <p>
-      An F/B EO can lead to a DR with oriented corners on U/D or R/L. If you do a z rotation (this preserves EO),
-      you will see that you already have 4 oriented corners and 3 good edges. This is a promising start for a domino
-      reduction.
+      F/BのEOをしたあとに、U/D面とR/L面でのコーナー反転を確認します。
+      このスクランブルをz回転すると（EOは変わらない）4つの向きの合ったコーナーと、3つのグッドエッジがあります。
+      これは、Domino Reductionのスタートとして優秀です。
     </p>
     <p>
-      If you look at the F/B EO without the z rotation, you only have 2 oriented corners and 2 good edges.
-      It’s very important that you check both possible orientations of the cube after the EO. Although there are only
-      3 possible DRs: U/D, R/L, F/B you can get to each one of them from two different EO’s. Keep this in mind or
-      you’ll miss 3 starts out of the possible 6 (50% is a lot!)
+      F/BのEOのあとz回転をしない場合だと、2つの向きの合ったコーナーと、2つのグッドエッジになります。
+      EOをしたあとには、このように2つのキューブ向きを確認することがとても重要です。
+      DRはU/D、R/L、F/Bの3軸で可能なので、それぞれのEOで向き違いの2つを確認することができます。
+      これを覚えておかないと、6つのうち3つを見逃すことになってしまいます（50%はあまりに大きすぎる！）。
     </p>
 
     <div>
       <b-card title="EOの例 その2">
         <b-card-text>
-          スクランブル：R' U' F L2 B2 R2 U2 F D2 B' L2 F' D2 U B L' U2 F' R2 B2 U' R' D R' U' F
+          スクランブル：{{ eo_example2 }}
         </b-card-text>
-        <b-card-text>B' R' D' L' <span class="text-muted">// EO (R/L) (4/4)</span></b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              B' R' D' L' <span class="text-muted">// EO (R/L) (4/4)</span>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="eo_example2"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
 
     <p>
-      Even though there are only 4 oriented corners on U/D and two bad edges, we are 1 move away from a very
-      promising case. With F or F’ we go from 2 bad edges to 1 and from 4 oriented corners to 5 (4-1+2)
+      U/D面に4つの向きの合ったコーナーと2つのバッドエッジがありますが、あと1手でとても優秀なケースになります。
+      それはFとF'で、バッドエッジが2つから1つになり、向きの合ったコーナーが4つから5つ(4-1+2)になります。
     </p>
     <p>
-      Try to play around with these two starts and see if you can orient all corners or get 4/4 good edges in a few
-      moves. Once you’re convinced it is a difficult task without a hint, you can move on to the next part.
+      ここであげた2つの例をスタートとして、そこから数手ですべてのコーナー向きを合わせ、4/4のグッドエッジにすることができるか、試してみてください。
+      ヒントなしでは難しいと確認したら、次の章に進みましょう。
     </p>
   </div>
 </template>
+
+<script>
+import * as SRVisualizer from 'sr-visualizer'
+
+export default {
+  data: () => ({
+    colorScheme: { "0": "#ffffff", "1": "#ee0000", "2": "#00d800", "3": "#fefe00", "4": "#ffa100", "5": "#0000f2" },
+    eo_example1: "R' U' F D2 R2 B2 D2 R2 B' F' L2 U' F2 U2 L D U' F' L' D' R2 U R' U' F",
+    eo_example2: "R' U' F L2 B2 R2 U2 F D2 B' L2 F' D2 U B L' U2 F' R2 B2 U' R' D R' U' F"
+  }),
+  mounted() {
+    let parameter = {}
+    parameter.colorScheme = this.colorScheme
+    parameter.algorithm = this.eo_example1
+    SRVisualizer.cubePNG(document.getElementById('eo_example1'), parameter)
+    parameter.algorithm = this.eo_example2
+    SRVisualizer.cubePNG(document.getElementById('eo_example2'), parameter)
+  }
+}
+</script>
