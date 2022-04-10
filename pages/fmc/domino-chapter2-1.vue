@@ -25,11 +25,18 @@
     </p>
     <div>
       <b-card title="2 Corners, 1 Edge - WV">
-        <b-card-text>
-          <div>L' U' R U L R'</div>
-          <div>L R U' R' U L</div>
-          <div>Other Variations</div>
-        </b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              <div>L' U' R U L R'</div>
+              <div>L R U' R' U L</div>
+              <div>Other Variations</div>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="example1"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
     <p>
@@ -38,12 +45,19 @@
     </p>
     <div>
       <b-card title="3 corners, 1 edge - F2L">
-        <b-card-text>
-          <div>R U R or R U R'</div>
-          <div>R U’ R or R U’ R'</div>
-          <div>L' U L or L' U L'</div>
-          <div>L' U’ L or L' U’ L'</div>
-        </b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              <div>R U R or R U R'</div>
+              <div>R U’ R or R U’ R'</div>
+              <div>L' U L or L' U L'</div>
+              <div>L' U’ L or L' U’ L'</div>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="example2"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
     <p>
@@ -51,12 +65,19 @@
     </p>
     <div>
       <b-card title="4 corners, 1 edge - Column & bar">
-        <b-card-text>
-          <div>L'U2 L or L'U2 L'</div>
-          <div>R'F2 R or R'F2 R'</div>
-          <div>R U2 R or R U2 R'</div>
-          <div>L F2 L or L F2 L'</div>
-        </b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              <div>L'U2 L or L'U2 L'</div>
+              <div>R'F2 R or R'F2 R'</div>
+              <div>R U2 R or R U2 R'</div>
+              <div>L F2 L or L F2 L'</div>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="example3"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
     <p>
@@ -65,10 +86,17 @@
     </p>
     <div>
       <b-card title="4 corners, 2 edges - Conjugate and Solver">
-        <b-card-text>
-          <div>R or R'</div>
-          <div>L or L'</div>
-        </b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              <div>R or R'</div>
+              <div>L or L'</div>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="example4"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
     <p>
@@ -90,11 +118,18 @@
         <b-card-text>
           スクランブル：R' U' F D2 R2 B2 D2 R2 B' F' L2 U' F2 U2 L D U' F' L' D' R2 U R' U' F
         </b-card-text>
-        <b-card-text>
-          <div>U' F <span class="text-muted">// EO (F/B) (2/2)</span></div>
-          <div>(R B2 L2 B2) <span class="text-muted">// setup to trigger (4/6)</span></div>
-          <div>(D' L2 D' ) <span class="text-muted">// DR trigger (3/9)</span></div>
-        </b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              <div>U' F <span class="text-muted">// EO (F/B) (2/2)</span></div>
+              <div>(R B2 L2 B2) <span class="text-muted">// setup to trigger (4/6)</span></div>
+              <div>(D' L2 D' ) <span class="text-muted">// DR trigger (3/9)</span></div>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="example5"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
 
@@ -146,12 +181,19 @@
         <b-card-text>
           スクランブル：R' U' F L2 B2 R2 U2 F D2 B' L2 F' D2 U B L' U2 F' R2 B2 U' R' D R' U' F
         </b-card-text>
-        <b-card-text>
-          <div>B' R' D' L' <span class="text-muted">// EO (R/L) (4/4)</span></div>
-          <div>F or F' <span class="text-muted">// 4c2e -> 3c1e (1/5)</span></div>
-          <div>(D'F2) <span class="text-muted">// setup (2/7)</span></div>
-          <div>(B'U'B') <span class="text-muted">// DR trigger (3/10)</span></div>
-        </b-card-text>
+        <b-row>
+          <b-col sm="8">
+            <b-card-text>
+              <div>B' R' D' L' <span class="text-muted">// EO (R/L) (4/4)</span></div>
+              <div>F or F' <span class="text-muted">// 4c2e -> 3c1e (1/5)</span></div>
+              <div>(D'F2) <span class="text-muted">// setup (2/7)</span></div>
+              <div>(B'U'B') <span class="text-muted">// DR trigger (3/10)</span></div>
+            </b-card-text>
+          </b-col>
+          <b-col sm="4">
+            <div id="example6"></div>
+          </b-col>
+        </b-row>
       </b-card>
     </div>
 
@@ -178,3 +220,37 @@
     </p>
   </div>
 </template>
+
+<script>
+import * as SRVisualizer from 'sr-visualizer'
+
+export default {
+  data: () => ({
+    colorScheme: { "0": "#ffffff", "1": "#ee0000", "2": "#00d800", "3": "#fefe00", "4": "#ffa100", "5": "#0000f2" },
+    example1: ["n", "n", "n", "n", "n", "n", "n", "b", "f", "r", "n", "n", "r", "n", "n", "n", "n", "n", "n", "r", "d", "n", "n", "d", "b", "n", "n"],
+    example2: ["n", "n", "n", "n", "n", "n", "b", "b", "l", "f", "n", "n", "f", "n", "n", "d", "n", "n", "r", "r", "d", "n", "n", "d", "n", "n", "b"], 
+    example3: ["b", "n", "n", "b", "n", "n", "b", "n", "b", "l", "n", "n", "l", "n", "n", "l", "n", "n", "d", "n", "d", "n", "n", "d", "n", "n", "d"],
+    example4: ["n", "n", "f", "n", "n", "f", "n", "n", "f", "r", "r", "r", "r", "n", "r", "r", "r", "r", "n", "n", "d", "n", "n", "d", "n", "n", "d"],
+    example5: "R' U' F D2 R2 B2 D2 R2 B' F' L2 U' F2 U2 L D U' F' L' D' R2 U R' U' F",
+    example6: "R' U' F L2 B2 R2 U2 F D2 B' L2 F' D2 U B L' U2 F' R2 B2 U' R' D R' U' F",
+  }),
+  mounted() {
+    let parameter = {}
+    parameter.facelets = this.example1
+    SRVisualizer.cubePNG(document.getElementById('example1'), parameter)
+    parameter.facelets = this.example2
+    SRVisualizer.cubePNG(document.getElementById('example2'), parameter)
+    parameter.facelets = this.example3
+    SRVisualizer.cubePNG(document.getElementById('example3'), parameter)
+    parameter.facelets = this.example4
+    SRVisualizer.cubePNG(document.getElementById('example4'), parameter)
+
+    parameter = {}
+    parameter.colorScheme = this.colorScheme
+    parameter.algorithm = this.example5
+    SRVisualizer.cubePNG(document.getElementById('example5'), parameter)
+    parameter.algorithm = this.example6
+    SRVisualizer.cubePNG(document.getElementById('example6'), parameter)
+  }
+}
+</script>
