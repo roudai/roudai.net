@@ -35,6 +35,6 @@
       DRが終わると、そこからの「神の数字」は18手(*)となり、その解法は「人力」の方法でほとんど見つけることがでまきす。
       つまり、DRは30手以内の解答を得るための確実で安定した方法なのです！
     </p>
-    <p>*http://kociemba.org/cube.htm</p>
+    <p>*<a href="http://kociemba.org/cube.htm">http://kociemba.org/cube.htm</a></p>
   </div>
 </template>

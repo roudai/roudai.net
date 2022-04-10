@@ -5,12 +5,20 @@
     を日本語訳したものです。
 
       <h3><nuxt-link to="domino-faq">FAQ（よくある質問）</nuxt-link></h3>
+
       <h3><nuxt-link to="domino-first">はじめに</nuxt-link></h3>
-      <h3><nuxt-link to="/fmc/domino-reduction">第一章 グッドEO</nuxt-link></h3>
-      <h3><nuxt-link to="/fmc/domino-reduction">第二章 コーナー反転＆グッドエッジ</nuxt-link></h3>
-      <h3><nuxt-link to="/fmc/domino-reduction">第三章 </nuxt-link></h3>
-      <h3><nuxt-link to="/fmc/domino-reduction">第四章 </nuxt-link></h3>
-      <h3><nuxt-link to="/fmc/domino-reduction">第五章 </nuxt-link></h3>
+
+      <h3>第一章</h3>
+      <h4><nuxt-link to="domino-chapter1">グッドEO</nuxt-link></h4>
+
+      <h3>第二章</h3>
+      <h4><nuxt-link to="domino-chapter2-1">コーナー反転＆グッドエッジ</nuxt-link></h4>
+
+      <h3>第三章</h3>
+
+      <h3>第四章</h3>
+
+      <h3>第五章</h3>
 
   </div>
 </template>
