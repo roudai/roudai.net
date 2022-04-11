@@ -44,7 +44,7 @@
       といったその他多くの高度なFMCの技術を組み合わせる必要があります。
     </p>
     <div class="text-center">
-      <nuxt-link to="domino-faq">FAQ（よくある質問）</nuxt-link> | <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-chapter1">グッドEO</nuxt-link>
+      <nuxt-link to="/fmc/domino-faq">FAQ（よくある質問）</nuxt-link> | <nuxt-link to="/fmc/domino-reduction">目次</nuxt-link> | <nuxt-link to="/fmc/domino-chapter1">グッドEO</nuxt-link>
     </div>
   </div>
 </template>

@@ -37,7 +37,7 @@
     </p>
     <p>*<a href="http://kociemba.org/cube.htm">http://kociemba.org/cube.htm</a></p>
     <div class="text-center">
-      <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-first">はじめに</nuxt-link>
+      <nuxt-link to="/fmc/domino-reduction">目次</nuxt-link> | <nuxt-link to="/fmc/domino-first">はじめに</nuxt-link>
     </div>
   </div>
 </template>
