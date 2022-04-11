@@ -106,8 +106,8 @@
       数回の移動で上記のいずれかになります。
     </p>
     <p>
-      The best way to learn the triggers is to figure out a personal way to recognize them and play around with
-      them a little bit. During your first tries, take a second solved cube and use it to take some DR triggers as
+      トリガーを学ぶ一番の方法は、独自の方法を考えてみて、少し遊んでみることです。
+      During your first tries, take a second solved cube and use it to take some DR triggers as
       reference and see if you can find the way to set them up on your scrambled one.
       At first you could find this very hard. Here are some examples to help you figure out the reasoning behind
       achieving DR.
@@ -217,6 +217,10 @@
       (B’ U’ B’) // DR trigger <br>
       DR is done!
     </p>
+
+    <div class="text-center">
+      <nuxt-link to="/fmc/domino-chapter1">グッドEO</nuxt-link> | <nuxt-link to="/fmc/domino-reduction">目次</nuxt-link> | <nuxt-link to="/fmc/domino-chapter2-2">部分的ドミノリダクション</nuxt-link>
+    </div>
   </div>
 </template>
 
