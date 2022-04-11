@@ -43,5 +43,8 @@
       本当に良い方法でDRを使いこなすには、とても幸運なケースを引き当てるか、DRの仕上げに逆NISS、センターインサーション、スライスインサーション
       といったその他多くの高度なFMCの技術を組み合わせる必要があります。
     </p>
+    <div class="text-center">
+      <nuxt-link to="domino-faq">FAQ（よくある質問）</nuxt-link> | <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-chapter1">グッドEO</nuxt-link>
+    </div>
   </div>
 </template>

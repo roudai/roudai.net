@@ -36,5 +36,8 @@
       つまり、DRは30手以内の解答を得るための確実で安定した方法なのです！
     </p>
     <p>*<a href="http://kociemba.org/cube.htm">http://kociemba.org/cube.htm</a></p>
+    <div class="text-center">
+      <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-first">はじめに</nuxt-link>
+    </div>
   </div>
 </template>

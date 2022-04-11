@@ -69,6 +69,9 @@
       ここであげた2つの例をスタートとして、そこから数手ですべてのコーナー向きを合わせ、4/4のグッドエッジにすることができるか、試してみてください。
       ヒントなしでは難しいと確認したら、次の章に進みましょう。
     </p>
+    <div class="text-center">
+      <nuxt-link to="domino-first">はじめに</nuxt-link> | <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-chapter1">コーナー反転とグッドエッジ</nuxt-link>
+    </div>
   </div>
 </template>
 
