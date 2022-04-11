@@ -70,7 +70,7 @@
       ヒントなしでは難しいと確認したら、次の章に進みましょう。
     </p>
     <div class="text-center">
-      <nuxt-link to="domino-first">はじめに</nuxt-link> | <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-chapter1">コーナー反転とグッドエッジ</nuxt-link>
+      <nuxt-link to="domino-first">はじめに</nuxt-link> | <nuxt-link to="domino-reduction">目次</nuxt-link> | <nuxt-link to="domino-chapter2-1">コーナー反転とグッドエッジ</nuxt-link>
     </div>
   </div>
 </template>

@@ -2,35 +2,36 @@
   <div>
     <h2>第2章 コーナー反転とグッドエッジ</h2>
     <p>
-      Once you have found a good EO start (remember there could be none), the next step is the actual domino
-      reduction. The best approach to get all 4 good edges and the CO is to try and solve these two problems at the
-      same time, saving moves. The are two sets of cases that can occur. If you have to deal with both E-edges and
-      corners we call these Domino Reduction Triggers. If you have to deal with just corners or E-edges or you
-      have both but EO is missing, we call these Partial Domino Reduction.
+      グッドEOなスタートが見つかったら（ない場合があることを忘れずに）、次のステップは、実際のドミノリダクションになります。
+      手数を節約して4つのグッドエッジとCOを作るのに最良の方法は、この2つを同時に行うことです。
+      発生しうるケースは2つあります。
+      Eエッジとコーナーを同時に処理することを、ドミノリダクショントリガーと呼びます。
+      コーナーだけ、E-エッジだけ、または両方できているがEOが揃っていない場合は、部分的ドミノリダクションと呼びます。
     </p>
     <h3>2.1 DRトリガー</h3>
     <p>
-      Let’s look at the most simple one: Take a solved cube and apply R U2 R’. If you look at the cube you can see
-      that you have 4 misoriented corners and only 1 bad edge. From this position, you can complete the DR in various
-      ways, but the shortest ones are:
+      最もシンプルな例を見てみましょう。完成状態のキューブからR U2 R'を回します。
+      この状態を見ると、4つの向きが合っていないコーナーと1つのバッドエッジがあることが分かります。
+      この状態からDRを完成させる方法はいくつかありますが、最短の手順は以下のものです。
     </p>
     <p class="text-center">
-      R U2 R or R U2 R'
+      R U2 R or R U2 R' <br>
       L F2 L or L F2 L'
     </p>
     <p>
-      You can easily remember this case by looking at the position of the U/D stickers: the ones near the U/D edge
-      form a “bar”, the ones near the E-layer edge form a “column”. Here are all of the most useful triggers we know
-      of, assuming the EO is done on F/B with white on top.
+      このケースは、U/Dのステッカー位置を見ることで簡単に覚えることができます。
+      U/Dエッジ周りの色の並びを「バー」、E層エッジの周りの色の並びを「カラム」と呼びます。
+      ここでは、私たちが知ってる有用なトリガーを全て紹介します。
+      以下では白を上面として、EOがF/Bで終わっているものとします。
     </p>
     <div>
-      <b-card title="2 Corners, 1 Edge - WV">
+      <b-card title="2 コーナー, 1 Eエッジ - WV">
         <b-row>
           <b-col sm="8">
             <b-card-text>
               <div>L' U' R U L R'</div>
               <div>L R U' R' U L</div>
-              <div>Other Variations</div>
+              <div>その他バリエーション</div>
             </b-card-text>
           </b-col>
           <b-col sm="4">
@@ -40,8 +41,8 @@
       </b-card>
     </div>
     <p>
-      These kinds of triggers are very difficult to spot and setup in few moves. When you find yourself in a 2c1e case
-      you may want to execute some moves to get to another case.
+      この種のトリガーは、少ない手数のセットアップを見つけるのが非常に難しいことが多いです。
+      2c1eケースを見つけたときには、他のケースを探したくなるかもしれません。
     </p>
     <div>
       <b-card title="3 corners, 1 edge - F2L">
@@ -61,7 +62,7 @@
       </b-card>
     </div>
     <p>
-      These can be seen as simple F2L cases.
+      これは単純なF2Lケースです。
     </p>
     <div>
       <b-card title="4 corners, 1 edge - Column & bar">
@@ -81,8 +82,7 @@
       </b-card>
     </div>
     <p>
-      These are the ones from the example. To set them up, focus on making the bar in front and the column on top
-      at the same time.
+      最初に上げた例のものです。セットアップするためには、手前のバーと上のカラムを同時に作ること着目します。
     </p>
     <div>
       <b-card title="4 corners, 2 edges - Conjugate and Solver">
@@ -100,11 +100,10 @@
       </b-card>
     </div>
     <p>
-      If you have all the pieces in the correct position on the same face, DR can be achieved with a single move. Focus
-      on making two columns with the E edges on U/D and bring them on the same layer. Pay attention to U/D edges
-      to be on the same layer too!
-      All the other combinations of number of bad edges and misoriented corners lead to one of the above with a few
-      moves.
+      同じ面の正しい位置にすべてのピースがあるのであれば、DRは1つの回転で作ることができます。
+      U/DにEエッジのカラムを2つ作ることに着目し、それらを同じ層に寄せます。
+      そして、U/Dエッジが同じ層になるように注意してください。その他のバッドエッジで向きが合っていないコーナーの組み合わせは、
+      数回の移動で上記のいずれかになります。
     </p>
     <p>
       The best way to learn the triggers is to figure out a personal way to recognize them and play around with
