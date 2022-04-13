@@ -44,6 +44,10 @@
             <b-dropdown-item to="/fmc/domino-reduction">Domino Reduction</b-dropdown-item>
           </b-nav-item-dropdown>
 
+          <b-nav-item-dropdown text="Clock" left>
+            <b-dropdown-item to="/clock/clock-no-flip">No-Flip Method</b-dropdown-item>
+          </b-nav-item-dropdown>
+
           <b-nav-item-dropdown text="Other" left>
             <b-dropdown-item to="/other/3x3x3-method">各種解法</b-dropdown-item>
             <b-dropdown-item to="/other/for-non-cubers">知っておいて欲しいこと</b-dropdown-item>

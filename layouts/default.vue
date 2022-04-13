@@ -1,6 +1,6 @@
 <template>
   <div class="bg-light">
-    <b-container fluid="xl">
+    <b-container>
       <nav-bar />
       <b-container class="entry-container">
         <nuxt />
