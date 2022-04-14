@@ -107,13 +107,11 @@
     </p>
     <p>
       トリガーを学ぶ一番の方法は、独自の方法を考えてみて、少し遊んでみることです。
-      During your first tries, take a second solved cube and use it to take some DR triggers as
-      reference and see if you can find the way to set them up on your scrambled one.
-      At first you could find this very hard. Here are some examples to help you figure out the reasoning behind
-      achieving DR.
+      最初は2つ目の完成したキューブを使ってDRトリガーを参考にしながら、スクランブルされたキューブに使うことができるかどうか確認します。
+      最初のうちは、非常に難しく感じるでしょう。DRを作る理屈を理解するために、いくつか例を見てみましょう。
     </p>
     <div>
-      <b-card title="First EO - Example">
+      <b-card title="ファーストEO - Example">
         <b-card-text>
           スクランブル：R' U' F D2 R2 B2 D2 R2 B' F' L2 U' F2 U2 L D U' F' L' D' R2 U R' U' F
         </b-card-text>
@@ -134,28 +132,28 @@
 
     <p>
       U’ F // EO (F/B) <br>
-      Use NISS and look at the inverse scramble. With a z rotation you can easily see you are in a 4 corners 1 edge
-      case (the orange-blue edge should not be in the E layer). Your aim is to set-up the Column & Bar case: the bar
-      with the orange-blue edge, the column with the white-blue edge.
+      NISSを使って、インバーススクランブルを見てみます。z回転をすると、4コーナー1エッジを簡単に見つけることができます（オレンジ-青のエッジはE層にあってはいけません）。
+      ここですることは、カラムとバー（オレンジ-青エッジのバーと、白-青エッジのカラム）をセットアップすることです。
     </p>
     <p>
-      (R B2 L2 B2) // setup to trigger <br>
-      R - joins an orange sticker with the L/R edge forming a semi-bar <br>
-      B2 - joins a corner with the E edge to form a semi-column <br>
-      L2 - completes the bar <br>
-      B2 - completes the column <br>
+      (R B2 L2 B2) // トリガーへのセットアップ <br>
+      R - オレンジのステッカーをL/Rエッジにつなぎ合わせて、セミバーを作る <br>
+      B2 - コーナーをEエッジとつなぎ合わせて、セミバーを作る <br>
+      L2 - バー完成 <br>
+      B2 - カラム完成 <br>
     </p>
     <p>
-      Now most of the work is done. Notice how moves of the U/D layers (in this case R/L) and double moves of
-      the other layers don’t affect the number of oriented corners or of good edges
+      これで、ほとんどの作業は終了です。U/D層(この場合はR/L)の回転と他の層の180度回転は、コーナーやエッジの数には影響を与えません。
     </p>
     <p>
-      (D’ L2 D’) // DR trigger <br>
-      We could have used a variation of the trigger, e.g. U F2 U. <br>
-      Ideally you should check every option but considering you only have one hour in official attempts, you should
-      choose the trigger that leaves you with the most blocks or with easy to solve corners. The second one is crucial in
-      DR finishes, but we’ll get to that later. There are two other ways of achieving DR from that EO on the normal
+      (D’ L2 D’) // DRトリガー <br>
+      The second one is crucial in DR finishes, but we’ll get to that later. There are two other ways of achieving DR from that EO on the normal
       scramble that use the same concept of this setup.
+      U F2 Uなど、他のトリガーのバリエーションも考えられます。
+      全ての選択肢をチェックすることですが理想ではありますが、公式の競技時間がが1時間しかないことを考えると、
+      ブロックが多く残るトリガーや、コーナーが解きやすいトリガーを選びます。
+      DRの出来方が2つ目に重要ですが、それについては後で述べます。
+      このEOのノーマルスクランブルからDRを作る方法は、あと2つあります。セットアップの考え方は同じです。
     </p>
 
     <p>
@@ -173,10 +171,12 @@
       These examples make use of a double move (U2 in the first one and B2 in the second one) to both setup some
       corners and move the bad edge in the correct position. Before this double move, the position of the edge would
       not have worked with the corners to trigger the DR.
+      これらの例では、180度回転（最初の例ではU2、2つ目はB2）を使って、コーナーのセットアップとバッドエッジの位置移動を同時に行っています。
+      この180度回転をする前では、エッジの位置はDRのトリガーをする場所として機能していませんでした。
     </p>
 
     <div>
-      <b-card title="Second EO - Example">
+      <b-card title="セカンドEO - Example">
         <b-card-text>
           スクランブル：R' U' F L2 B2 R2 U2 F D2 B' L2 F' D2 U B L' U2 F' R2 B2 U' R' D R' U' F
         </b-card-text>
@@ -202,20 +202,20 @@
     </p>
 
     <p>
-      Both F and F’ end up working for our DR setup. Look at the inverse with NISS. Your aim is now to try
-      and setup one of the F2L cases (3c,1e). To get a better idea of what you are going for, apply L’ U L on a solved
-      cube.
+      DRセットアップには、FとF'のどちらでも構いません。NISSでインバースを見てみましょう。
+      F2Lケース(3c,1e)のどれかにセットアップすることを目指します。
+      どうすればいいかアイデアを得るために、完成状態からL' U Lしたキューブを用意しましょう。
     </p>
 
     <p>
       (D’ F2) // setup <br>
-      D’ - moves a yellow sticker to form a semi-bar with U/D edge <br>
-      F2 - moves the last corner to form a semi-column with E edge
+      D’ - 黄色のステッカーを動かし、U/Dエッジとセミバーを作ります。 <br>
+      F2 - 最後のコーナーを動かし、Eエッジのセミカラムを作ります。
     </p>
 
     <p>
       (B’ U’ B’) // DR trigger <br>
-      DR is done!
+      DRができました！
     </p>
 
     <div class="text-center">
