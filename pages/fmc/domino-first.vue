@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      注釈：このガイドは、2019年に執筆されたものです。
+      訳注：このガイドは、2019年に執筆されたものです。
     </p>
     <h2>はじめに</h2>
     <p>
@@ -16,7 +16,7 @@
     </p>
     <p>
       このガイドを読み始める前に、Sebastianoの<a href="https://fmcsolves.cubing.net/fmc_tutorial_ENG.pdf">FMCチュートリアル</a>
-      を読むことを強く推奨します（注釈：kawamさんによる<a href="https://kawam1123.github.io/translation/FMC/FMC-Tutorial/v3/">日本語訳バージョン</a>も参照）。
+      を読むことを強く推奨します（訳注：kawamさんによる<a href="https://kawam1123.github.io/translation/FMC/FMC-Tutorial/v3/">日本語訳バージョン</a>も参照）。
       このチュートリアルは、イタリアではFMCの「聖書」とも呼ばれており、このガイドの構成の元となっています。
       これから使う用語や略語の多くはFMCの世界では一般的なものがほとんどですが、これから初めてFMCに取り組む方は、まずは基本的なことから始めて、慣れてください。
       また、このガイドを執筆するにあたって、Sebastianoはいくつかの解答例の提供に協力してくれました。
