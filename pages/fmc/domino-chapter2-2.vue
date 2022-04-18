@@ -2,17 +2,16 @@
   <div>
     <h2>部分的ドミノリダクション</h2>
     <p>
-      Sometimes, after you complete a DR step you may get what we call a Partial Domino Reduction, or PDR. It’s
-      “partial” because you already have two of the three steps needed for DR, solved: CO, E-layer or EO. In this
-      section we will go through all the possibilities.
+      DRのステップが完了した後に、PDR（Partial Domino Reduction：部分的ドミノリダクション）と呼ばれるものが発生することがあります。
+      これはDRに必要な3つのステップ、CO、E-Layer、EOのうち、2つだけができていることから、「部分的」とつきます。
+      この章では、そのすべての場合について説明します。
     </p>
     <p>
-      Remember that a perfectly valid option with PDR is to keep going with the solve as if you had DR and fix
-      everything with insertions at the end.
+      PDRの有効な解決法は、DRができたかのように進め、最後にインサーションで修正することだということを覚えておいてください。
     </p>
 
-    <h3>2.2.1 PDR in which you have CO and EO</h3>
-    <h4>1 bad edge</h4>
+    <h3>2.2.1 COとEOができたPDF</h3>
+    <h4>1バッドエッジ</h4>
     <p>
       There are two ways to deal with this case. The first one is to insert a commutator, either during the solve or
       at the end when you have a full skeleton. Edge commutators may cancel more than average in DR solves so
