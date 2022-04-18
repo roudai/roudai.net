@@ -11,20 +11,20 @@
     </p>
 
     <h3>2.2.1 COとEOができたPDF</h3>
-    <h4>1バッドエッジ</h4>
+    <h4>1つのバッドエッジ</h4>
     <p>
-      There are two ways to deal with this case. The first one is to insert a commutator, either during the solve or
-      at the end when you have a full skeleton. Edge commutators may cancel more than average in DR solves so
-      it would be better to leave this at the end. Nonetheless, if you decide to insert the commutator while setting
-      up the trigger, then you must pay attention to what edges you are cycling. For a 3 cycle the only valid options are:
+      この場合、対処法は2つあります。1つは、ソルブの途中、または完全なスケルトンができた時点で、コミュテータを挿入することです。
+      エッジコミュテータはDRを作っているときよりもそのあとにインサートしたほうが大きなキャンセルが期待できます。
+      それでもなお、DRを作るまでの間にコミュテータをインサートすることに決めたのならば、どのエッジをサイクルするか注意する必要があります。
+      3サイクルの場合、選択肢は以下2つです。
     </p>
     <p>
-      Bad edge → E-edge in the U/D layer → Good edge <br>
-      Bad edge → U/D edge → E-edge in the U/D layer
+      バットエッジ → U/D層のEエッジ → グッドエッジ <br>
+      バッドエッジ → U/Dエッジ → U/D層のEエッジ
     </p>
     <p>
-      The other option is to insert a slice that swaps the bad edge with the last E-edge and either two U/D edges
-      or two good edges. Here is an example of this by Sebastiano Tronto:
+      もう一つの選択肢は、最後のEエッジのバッドエッジと2つのU/Dエッジまたは2つのグッドエッジの
+      スライス交換をインサートすることです。ここでは、Sebastiano Trontoによる例を紹介します。
     </p>
     <div>
       <b-card title="First PDR Example">
@@ -47,14 +47,14 @@
       </b-card>
     </div>
 
-    <h4>2 bad edges</h4>
+    <h4>2つのバッドエッジ</h4>
     <div>
       <b-card title="Break & Solve">
         <b-row>
           <b-col sm="8">
             <b-card-text>
-              <div>R' E2 R or R E2 R’'</div>
-              <div>Other Variations</div>
+              <div>R' E2 R or R E2 R’</div>
+              <div>等</div>
             </b-card-text>
           </b-col>
           <b-col sm="4">
@@ -65,31 +65,31 @@
     </div>
 
     <p>
-      Your goal is to form a column with the E edges on the opposite face as the 2 bad edges and then swap them with
-      R’ E2 R and variations. As in the previous case, you can insert a slice move in your solve that swaps the 2 bad
-      edges with the two E-edges. R’ U2 D2 L = R’ E2 R is in fact the easiest case of setup to a single slice.
+      Eエッジのカラムとバッドエッジのカラムを対面に作り、それをR' E2 Rなどの手順で交換します。
+      前のケースと同じように、2つのEエッジとバッドエッジを交換するスライスをインサートすることができます。
+      R' U2 D2 L = R' E2 R は、シングルライスにセットアップできる最も簡単なケースです。
     </p>
 
-    <h4>3 or 4 bad edges</h4>
+    <h4>3または4つのバッドエッジ</h4>
     <p>
-      This is not a very good case but you have a few options to consider: <br>
-      -You could insert two slices that swap the bad edges with E-edges. <br>
-      -You could perform a single move that takes you either to a 4c1e case or to a 4c2e case. <br>
-      -You could keep on going with your corners first solve and insert the edges when you have a full skeleton. <br>
+      これはあまり良いケースとは言えませんが、いくつか検討できる選択肢があります。
+      - バッドエッジとEエッジのスライス交換を2回インサートする
+      - 4c1eか4c2eのどちらかのケースに一手で移行する
+      - このままコーナーを先に解いて、フルスケルトンにしてからエッジをインサートする
     </p>
     <p>
-      If none of these seem to have good continuations, you should start looking for a different DR
+      どれもうまくいかないようであれば、別のDRを検討すべきです。
     </p>
 
-    <h3>2.2.3 PDR in which you already have E-layer and EO</h3>
-    <h4>2 bad corners</h4>
+    <h3>2.2.3 EレイヤーとEOができたPDR</h3>
+    <h4>2つのバッドエッジ</h4>
     <div>
-      <b-card title="Fake Swap">
+      <b-card title="フェイクスワップ">
         <b-row>
           <b-col sm="8">
             <b-card-text>
               <div>R U' L2 U R'</div>
-              <div>Other Variations</div>
+              <div>等</div>
             </b-card-text>
           </b-col>
           <b-col sm="4">
@@ -99,31 +99,34 @@
       </b-card>
     </div>
 
-    <h4>3 bad corners</h4>
+    <h4>3つのバッドエッジ</h4>
     <p>
-      You can insert a sune or a 3-corner commutator. Keep in mind that the sune does a 3 cycle of edges as well, so
-      the same rules that were explained in the ”1 bad edge” section for which edges can be cycled apply here.
+      suneや3コーナーのコミュテータをインサートできます。suneもエッジの3サイクルであることを覚えておいてください。
+      どのエッジにサイクルを適用させるかは、「1つのバッドエッジ」で説明したのと同様です。
     </p>
     <p>
-      If you decide to insert a commutator during the setup phase, you should go for the classic 8movers (pure). If you
-      decide to keep on solving with PDR and insert the corners after you have a full skeleton, in section 5.1 we will
-      talk about ”DR special” algorithms that may cancel more moves.
+      セットアップの段階でコミュテータをインサートすることにした場合、典型的な8手のインサート（ピュアインサート）を選ぶとよいでしょう。
+      PDRで解き続け、完全なスケルトンができてからコーナーを挿入することにした場合は、
+      より多くの手をキャンセルする可能性のある「DRならではの」アルゴリズムについて5.1で説明します。
     </p>
 
-    <h4>4 to 8 bad corners</h4>
+    <h4>4または8つのバッドエッジ</h4>
     <p>
-      It’s better to look for another DR
+      別のDRを探しましょう。
     </p>
     
-    <h3>2.2.3 PDR in which you already have CO and E-layer</h3>
-    <h4>0 corners and 0 edges</h4>
+    <h3>2.2.3 COとE層ができたPDR</h3>
+    <h4>0コーナーまたは0エッジ</h4>
     <p>
-      You can use M’ U M, M’ U M’ and other Roux-like EO’s. <br>
       In this particular case you already have 4 good edges and all the corners oriented but you don’t have EO. To
       achieve DR you need to orient the edges using the S and M slices like in the second to last step of the Roux method
+      M' U M、M' U M'など、RouxっぽいEOを使うことができます。<br>
+      このケースでは、グッドエッジが4つありすべてのコーナー向きが合っていますが、EOはできていません。
+      DRを作るためには、Rouxメソッドの最後から2番目のステップのように、SとMのスライスを使ってエッジ向きを揃える必要があります。
     </p>
     <p>
-      Alexandre Campos has a nice document (click here!) that collects a lot of corner-PDR and DR solves
+      Alexadree Composが、多くのコーナーPDRとDRの解法を集めた素晴らしいドキュメントを持っています
+      （<a href="https://docs.google.com/document/d/1oZwr2aSllFBL5lhbLTiWKQWplfk4i0LN0wA0uskeLJs/edit">こちら！</a>）
     </p>
   </div>
 </template>
